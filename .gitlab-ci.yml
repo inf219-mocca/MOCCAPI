@@ -28,6 +28,10 @@ Check style:
   stage: check
   script: pipenv run black --check .
 
+Check quality:
+  stage: check
+  script: pipenv run flake8 .
+
 Test:
   stage: test
   script: pipenv run python manage.py test
