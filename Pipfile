@@ -8,6 +8,7 @@ black = "*"
 flake8 = "*"
 coverage = "*"
 flake8-django = "*"
+flake8-import-order = "*"
 
 [packages]
 django = "*"
