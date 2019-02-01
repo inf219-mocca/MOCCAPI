@@ -2,7 +2,7 @@ image: python:3.7
 
 stages:
   - check
-# - test
+  - test
 
 variables:
   PIP_CACHE_DIR: $CI_PROJECT_DIR/.cache/pip
@@ -27,3 +27,7 @@ Check vulnerabilities:
 Check style:
   stage: check
   script: pipenv run black --check .
+
+Test:
+  stage: test
+  script: pipenv run python manage.py test
