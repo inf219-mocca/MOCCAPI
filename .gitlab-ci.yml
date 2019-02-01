@@ -1,15 +1,23 @@
 image: python:latest
 
 stages:
-  - build
   - check
-#  - test
+# - test
 
-Build:
-  stage: build
-  script:
+variables:
+  PIP_CACHE_DIR: $CI_PROJECT_DIR/.cache/pip
+  PIPENV_CACHE_DIR: $CI_PROJECT_DIR/.cache/pipenv
+  PIPENV_VENV_IN_PROJECT: 1
+
+cache:
+  key: "$CI_JOB_NAME-$CI_COMMIT_REF_SLUG"
+  paths:
+    - .cache/
+    - .venv/
+
+before_script:
   - pip install -U pip pipenv setuptools
-  - pipenv install --dev --system --deploy
+  - pipenv sync --dev
 
 Check vulnerabilities:
   stage: check
@@ -18,4 +26,3 @@ Check vulnerabilities:
 Check style:
   stage: check
   script: pipenv run black --check .
-
