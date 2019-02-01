@@ -1,0 +1,19 @@
+image: python:latest
+
+stages:
+#  - build
+  - check
+#  - test
+
+before_script:
+  - pip install -U pip pipenv setuptools
+  - pipenv install --dev --system --deploy
+
+Check vulnerabilities:
+  stage: check
+  script: pipenv check
+
+Check style:
+  stage: check
+  script: pipenv run black --check .
+
