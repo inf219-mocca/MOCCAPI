@@ -1,11 +1,13 @@
 image: python:latest
 
 stages:
-#  - build
+  - build
   - check
 #  - test
 
-before_script:
+Build:
+  stage: build
+  script:
   - pip install -U pip pipenv setuptools
   - pipenv install --dev --system --deploy
 
