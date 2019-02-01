@@ -35,3 +35,10 @@ Check quality:
 Test:
   stage: test
   script: pipenv run python manage.py test
+
+Test coverage:
+  stage: test
+  script:
+    - coverage run --source='.' manage.py test
+    - coverage report
+  coverage: /TOTAL.*\s+(\d+%)$/
