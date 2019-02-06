@@ -1,3 +1,8 @@
-from django.shortcuts import render
+from rest_framework import viewsets
+from .serializers import APISerializer
+from .models import API
 
-# Create your views here.
+
+class APIViewSet(viewsets.ModelViewSet):
+    queryset = API.objects.all()
+    serializer_class = APISerializer
