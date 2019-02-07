@@ -10,8 +10,9 @@ stdenv.mkDerivation {
   shellHook = ''
     virtualenv --no-setuptools .venv
     export PATH=$PWD/.venv/bin:$PATH
-    pip install -U pip
-    pip install pipenv
+    export PIPENV_VENV_IN_PROJECT=1
+    pip install --upgrade pip
+    pip install --upgrade pipenv
     pipenv sync --dev
   '';
 }
