@@ -13,6 +13,7 @@ flake8-import-order = "*"
 [packages]
 django = "*"
 djangorestframework = "*"
+drf-yasg = "*"
 
 [pipenv]
 allow_prereleases = true
