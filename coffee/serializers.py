@@ -6,18 +6,18 @@ from .models import API, Coffee, Mocca
 class CoffeeSerializer(serializers.ModelSerializer):
     class Meta:
         model = Coffee
-        fields = "__all__"
+        fields = ("temperature", "cups", "amount")
 
 
 class MoccaSerializer(serializers.ModelSerializer):
     class Meta:
         model = Mocca
-        fields = "__all__"
+        fields = ("is_powered", "started_brewing", "lost_power", "outages")
 
 
-class APISerializer(serializers.HyperlinkedModelSerializer):
-    coffee = CoffeeSerializer
-    mocca = MoccaSerializer
+class APISerializer(serializers.ModelSerializer):
+    coffee = CoffeeSerializer(many=False, read_only=True)
+    mocca = MoccaSerializer(many=False, read_only=True)
 
     class Meta:
         model = API
