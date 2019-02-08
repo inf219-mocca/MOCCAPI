@@ -30,11 +30,11 @@ Check style:
 
 Check imports:
   stage: check
-  script: pipenv run isort --check-only --diff -recursive --quiet .
+  script: pipenv run isort --check-only --diff --recursive --quiet .
 
 Check quality:
   stage: check
-  script: pipenv run flake8 .
+  script: pipenv run flake8
 
 Test:
   stage: test
@@ -43,6 +43,6 @@ Test:
 Test coverage:
   stage: test
   script:
-    - pipenv run coverage run --source='.' manage.py test
+    - pipenv run coverage run manage.py test
     - pipenv run coverage report
   coverage: /TOTAL.*\s+(\d+%)$/

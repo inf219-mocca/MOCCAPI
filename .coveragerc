@@ -1,0 +1,3 @@
+[run]
+omit = */.venv/*,*/migrations/*
+source = moccapi,coffee

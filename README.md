@@ -29,6 +29,7 @@ that everything is up to date, run the following commands:
 - `black .` to format all Python code.
 - `isort --recursive .` to sort imports.
 - `flake8` to check for style warnings, errors etc.
+- `python manage.py test` to run tests.
 
 # Running
 
