@@ -30,7 +30,7 @@ schema_view = get_schema_view(
         default_version="v1",
         description="MOCCA API Documentation",
         contact=openapi.Contact(email="sni038@student.uib.no"),
-        license=openapi.License(name="WTFPL"),
+        license=openapi.License(name="MIT"),
     ),
     public=True,
     permission_classes=(permissions.AllowAny,),
