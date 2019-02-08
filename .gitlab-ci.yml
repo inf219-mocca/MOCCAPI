@@ -28,6 +28,10 @@ Check style:
   stage: check
   script: pipenv run black --check .
 
+Check imports:
+  stage: check
+  script: pipenv run isort --check-only --diff -recursive --quiet .
+
 Check quality:
   stage: check
   script: pipenv run flake8 .
