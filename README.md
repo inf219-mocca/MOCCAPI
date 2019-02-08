@@ -30,6 +30,13 @@ that everything is up to date, run the following commands:
 - `isort --recursive .` to sort imports.
 - `flake8` to check for style warnings, errors etc.
 
+# Running
+
+To begin with, you need to make all the migrations. From PyCharm, open the
+`manage.py` console from Tools, run `makemigrations` and then `migrate`. Now you
+can start the application and go to `localhost:8000` to view it. For a view of
+the Swagger documentation go to `localhost:8000/swagger/`.
+
 # Docker
 
 Build with `docker build -t moccapi .` and run with `docker run -itd -p
