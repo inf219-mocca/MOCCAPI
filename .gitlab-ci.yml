@@ -45,4 +45,4 @@ Test coverage:
   script:
     - pipenv run coverage run manage.py test
     - pipenv run coverage report
-  coverage: /^TOTAL.*\s+(\d+\%)$/
+  coverage: '/TOTAL.*\s+(\d+%)$/'
