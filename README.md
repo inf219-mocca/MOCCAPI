@@ -1,4 +1,4 @@
-# `moccapi`
+# `moccapi` [![pipeline status](https://gitlab.com/inf219-mocca/moccapi/badges/master/pipeline.svg)](https://gitlab.com/inf219-mocca/moccapi/commits/master)[![coverage report](https://gitlab.com/inf219-mocca/moccapi/badges/master/coverage.svg)](https://gitlab.com/inf219-mocca/moccapi/commits/master) 
 
 Repository containing the API server.
 
