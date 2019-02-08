@@ -8,7 +8,8 @@ black = "*"
 flake8 = "*"
 coverage = "*"
 flake8-django = "*"
-flake8-import-order = "*"
+isort = {extras = ["pipfile"],version = "*"}
+flake8-isort = "*"
 
 [packages]
 django = "*"
