@@ -43,6 +43,6 @@ Test:
 Test coverage:
   stage: test
   script:
-    - coverage run --source='.' manage.py test
-    - coverage report
+    - pipenv run coverage run --source='.' manage.py test
+    - pipenv run coverage report
   coverage: /TOTAL.*\s+(\d+%)$/
