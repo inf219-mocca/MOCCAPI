@@ -38,6 +38,8 @@ To begin with, you need to make all the migrations. From PyCharm, open the
 can start the application and go to `localhost:8000` to view it. For a view of
 the Swagger documentation go to `localhost:8000/swagger/`.
 
+If you require test data, run `loaddata api` in the `manage.py` console.
+
 # Docker
 
 Build with `docker build -t moccapi .` and run with `docker run -itd -p
