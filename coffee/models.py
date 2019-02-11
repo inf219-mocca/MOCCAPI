@@ -2,12 +2,11 @@ from django.db import models
 
 
 class Coffee(models.Model):
-    temperature = models.PositiveSmallIntegerField()
-    cups = models.PositiveSmallIntegerField()
-    amount = models.PositiveSmallIntegerField()
+    temperature = models.FloatField()
+    amount = models.FloatField()
 
     def __str__(self):
-        return f"{self.cups} ({self.amount}) at {self.temperature}"
+        return f"({self.amount}) at {self.temperature}C"
 
 
 class Mocca(models.Model):
