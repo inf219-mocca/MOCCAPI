@@ -12,7 +12,6 @@ class Coffee(models.Model):
 class Mocca(models.Model):
     is_powered = models.BooleanField()
     started_brewing = models.DateTimeField("started brewing")
-    lost_power = models.BooleanField()
     outages = models.DurationField(blank=True, null=True)
 
     def __str__(self):
