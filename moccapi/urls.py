@@ -15,4 +15,4 @@ Including another URLconf
 """
 from django.urls import include, path
 
-urlpatterns = [path("api/", include("coffee.urls"))]
+urlpatterns = [path("api/v1/", include("coffee.urls", namespace='v1'))]

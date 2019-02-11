@@ -91,5 +91,8 @@ USE_TZ = True
 STATIC_URL = "/static/"
 
 # API documentation
-REST_FRAMEWORK = {"UNAUTHENTICATED_USER": None}
+REST_FRAMEWORK = {
+    "UNAUTHENTICATED_USER": None,
+    "DEFAULT_VERSIONING_CLASS": "rest_framework.versioning.NamespaceVersioning",
+}
 SWAGGER_SETTINGS = {"USE_SESSION_AUTH": False, "SECURITY_DEFINITIONS": None}

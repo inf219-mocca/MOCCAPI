@@ -18,6 +18,7 @@ schema_view = get_schema_view(
     permission_classes=(permissions.AllowAny,),
 )
 
+app_name = "coffee"
 urlpatterns = [
     path("coffee/", APIViewSet.as_view()),
     path(
