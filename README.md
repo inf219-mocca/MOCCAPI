@@ -37,8 +37,8 @@ To begin with, you need to make all the migrations. From PyCharm, open the
 `manage.py` console from Tools, run `makemigrations` and then `migrate`. Next up
 you should probably import some fixtures so you have some data to work with, you
 can do this with `loaddata api` in the `manage.py` console. Now you can start
-the application and go to `localhost:8000/api/coffee` to view it. For a view of
-the Swagger documentation go to `localhost:8000/api/swagger/`.
+the application and go to `localhost:8000/api/v1/coffee/` to view it. For a view
+of the Swagger documentation go to `localhost:8000/api/v1/swagger/`.
 
 # Docker
 
