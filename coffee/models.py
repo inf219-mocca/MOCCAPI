@@ -23,5 +23,8 @@ class API(models.Model):
     coffee = models.OneToOneField(Coffee, on_delete=models.CASCADE)
     mocca = models.OneToOneField(Mocca, on_delete=models.CASCADE)
 
+    class Meta:
+        get_latest_by = "time"
+
     def __str__(self):
         return f"{self.time}"
