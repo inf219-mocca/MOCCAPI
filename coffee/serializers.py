@@ -6,13 +6,13 @@ from .models import API, Coffee, Mocca
 class CoffeeSerializer(serializers.ModelSerializer):
     class Meta:
         model = Coffee
-        fields = ("temperature", "cups", "amount")
+        fields = ("temperature", "amount")
 
 
 class MoccaSerializer(serializers.ModelSerializer):
     class Meta:
         model = Mocca
-        fields = ("is_powered", "started_brewing", "lost_power", "outages")
+        fields = ("is_powered", "started_brewing", "outages")
 
 
 class APISerializer(serializers.ModelSerializer):
