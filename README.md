@@ -6,7 +6,7 @@ Repository containing the API server.
 
 To configure everything so that stuff works properly, do the following: 
 
-1. Open preferences
+1. Open settings
 2. Go to `Languages and frameworks`
 3. Select Django
 4. Configure the settings according to the image below
