@@ -1,4 +1,4 @@
-# `moccapi` [![pipeline status](https://gitlab.com/inf219-mocca/moccapi/badges/master/pipeline.svg)](https://gitlab.com/inf219-mocca/moccapi/commits/master)[![coverage report](https://gitlab.com/inf219-mocca/moccapi/badges/master/coverage.svg)](https://gitlab.com/inf219-mocca/moccapi/commits/master) 
+# `moccapi` [![CircleCI](https://circleci.com/gh/inf219-mocca/MOCCAPI.svg?style=svg)](https://circleci.com/gh/inf219-mocca/MOCCAPI) [![codecov](https://codecov.io/gh/inf219-mocca/MOCCAPI/branch/master/graph/badge.svg)](https://codecov.io/gh/inf219-mocca/MOCCAPI)
 
 Repository containing the API server.
 
