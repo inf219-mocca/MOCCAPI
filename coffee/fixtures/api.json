@@ -1,0 +1,80 @@
+[
+  {
+    "model": "coffee.coffee",
+    "pk": 1,
+    "fields": {
+      "temperature": 66.5,
+      "amount": 0.4
+    }
+  },
+  {
+    "model": "coffee.coffee",
+    "pk": 2,
+    "fields": {
+      "temperature": 42.0,
+      "amount": 1.0
+    }
+  },
+  {
+    "model": "coffee.coffee",
+    "pk": 3,
+    "fields": {
+      "temperature": 18.2,
+      "amount": 0.3
+    }
+  },
+  {
+    "model": "coffee.mocca",
+    "pk": 1,
+    "fields": {
+      "is_powered": true,
+      "started_brewing": "2019-01-31T12:35:11Z",
+      "outages": null
+    }
+  },
+  {
+    "model": "coffee.mocca",
+    "pk": 2,
+    "fields": {
+      "is_powered": true,
+      "started_brewing": "2019-02-05T09:16:51Z",
+      "outages": null
+    }
+  },
+  {
+    "model": "coffee.mocca",
+    "pk": 3,
+    "fields": {
+      "is_powered": false,
+      "started_brewing": "2019-02-08T18:55:04Z",
+      "outages": "00:33:21"
+    }
+  },
+  {
+    "model": "coffee.api",
+    "pk": 1,
+    "fields": {
+      "time": "2019-01-31T12:35:11Z",
+      "coffee": 1,
+      "mocca": 1
+    }
+  },
+  {
+    "model": "coffee.api",
+    "pk": 2,
+    "fields": {
+      "time": "2019-02-05T09:16:51Z",
+      "coffee": 2,
+      "mocca": 2
+    }
+  },
+  {
+    "model": "coffee.api",
+    "pk": 3,
+    "fields": {
+      "time": "2019-02-08T18:55:04Z",
+      "coffee": 3,
+      "mocca": 3
+    }
+  }
+]

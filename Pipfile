@@ -4,7 +4,17 @@ url = "https://pypi.org/simple"
 verify_ssl = true
 
 [dev-packages]
+black = "*"
+flake8 = "*"
+coverage = "*"
+flake8-django = "*"
+isort = {extras = ["pipfile"],version = "*"}
+flake8-isort = "*"
 
 [packages]
-flask = "*"
-flask-restful = "*"
+django = "*"
+djangorestframework = "*"
+drf-yasg = "*"
+
+[pipenv]
+allow_prereleases = true
