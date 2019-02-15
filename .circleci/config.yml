@@ -75,7 +75,7 @@ jobs:
           command: pipenv run coverage run manage.py test
 
       - codecov/upload:
-          file: {{ .coverage }}
+          file: {{ ".coverage" }}
 
 workflows:
   version: 2.1
