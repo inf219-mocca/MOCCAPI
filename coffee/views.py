@@ -1,25 +1,25 @@
 from rest_framework import generics
 
-from .models import API
-from .serializers import APISerializer
+from .models import Coffee
+from .serializers import CoffeeSerializer
 
 
-class APILatestView(generics.RetrieveAPIView):
+class CoffeeLatestView(generics.RetrieveAPIView):
     """
     Returns the latest readings from the sensor.
     """
 
-    queryset = API.objects.all()
-    serializer_class = APISerializer
+    queryset = Coffee.objects.all()
+    serializer_class = CoffeeSerializer
 
     def get_object(self):
         return self.queryset.latest()
 
 
-class APIListView(generics.ListAPIView):
+class CoffeeListView(generics.ListAPIView):
     """
     Returns the 10 latest readings from the sensor.
     """
 
-    queryset = API.objects.all()[:10]
-    serializer_class = APISerializer
+    queryset = Coffee.objects.all()[:10]
+    serializer_class = CoffeeSerializer
