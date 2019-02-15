@@ -1,0 +1,85 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/python:3.6.8
+    working_directory: ~/moccapi
+
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+            - cache-{{ .Branch }}-{{ checksum "Pipfile.lock" }}
+            - cache-{{ .Branch }}-
+            - cache-
+      - run:
+          name: Install dependencies
+          command: pipenv sync --dev
+      - save_cache:
+          key: cache-{{ .Branch }}-{{ checksum "Pipfile.lock" }}
+          paths:
+            - ~/.local
+            - ~/.cache
+  check:
+    docker:
+      - image: circleci/python:3.6.8
+    working_directory: ~/.moccapi
+
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+            - cache-{{ .Branch }}-{{ checksum "Pipfile.lock" }}
+            - cache-{{ .Branch }}-
+            - cache-
+
+      - run: pipenv sync --dev
+      - run:
+          name: Vulnerabilities
+          command: pipenv check
+
+      - run:
+          name: Quality
+          command: pipenv run flake8
+
+      - run:
+          name: Style
+          command: pipenv run black --check .
+
+      - run:
+          name: Imports
+          command: pipenv run isort --check-only --diff --recursive --quiet .
+
+  test:
+    docker:
+      - image: circleci/python:3.6.8
+    working_directory: ~/moccapi
+
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+            - cache-{{ .Branch }}-{{ checksum "Pipfile.lock" }}
+            - cache-{{ .Branch }}-
+            - cache-
+
+      - run: pipenv sync --dev
+      - run:
+          name: Test
+          command: pipenv run python manage.py test
+
+      - run:
+          name: Coverage
+          command: pipenv run coverage run manage.py test
+
+workflows:
+  version: 2
+  build-check-and-test:
+    jobs:
+      - build
+      - check:
+          requires:
+            - build
+      - test:
+          requires:
+            - build
