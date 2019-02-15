@@ -72,10 +72,12 @@ jobs:
 
       - run:
           name: Coverage
-          command: pipenv run coverage run manage.py test
+          command: |
+            pipenv run coverage run manage.py test
+            pipenv run coverage xml
 
       - codecov/upload:
-          file: {{ ".coverage" }}
+          file: coverage.xml
 
 workflows:
   version: 2.1
