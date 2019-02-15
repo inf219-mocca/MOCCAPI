@@ -7,7 +7,7 @@ class CoffeeSerializer(serializers.ModelSerializer):
     class Meta:
         model = Coffee
         fields = (
-            "time",
+            "measured_at",
             "is_powered",
             "started_brewing",
             "temperature",
