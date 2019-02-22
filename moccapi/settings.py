@@ -100,3 +100,9 @@ REST_FRAMEWORK = {
     "DEFAULT_VERSIONING_CLASS": "rest_framework.versioning.NamespaceVersioning",
 }
 SWAGGER_SETTINGS = {"USE_SESSION_AUTH": False, "SECURITY_DEFINITIONS": None}
+
+# Celery configuration
+CELERY_BROKER_URL = "amqp://guest:guest@localhost//"
+CELERY_ACCEPT_CONTENT = ["json"]
+CELERY_TASK_SERIALIZER = "json"
+CELERY_IMPORTS = ("sensors.tasks",)
