@@ -16,6 +16,7 @@ django = "*"
 djangorestframework = "*"
 drf-yasg = "*"
 pyserial = "*"
+celery = "*"
 
 [pipenv]
 allow_prereleases = true
