@@ -3,6 +3,8 @@ from typing import Union
 import serial.tools.list_ports
 from serial import Serial
 
+from moccapi.settings import ARDUINO_ID
+
 # from coffee import models
 
 
@@ -19,7 +21,7 @@ class Arduino:
         """
         ports = list(serial.tools.list_ports.comports())
         for port in ports:
-            if "VID:PID=1A86:7523" in port.hwid:
+            if ARDUINO_ID in port.hwid:
                 return port.device
 
     def read(self) -> (float, float):

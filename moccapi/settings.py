@@ -28,6 +28,10 @@ DEBUG = True
 ALLOWED_HOSTS = []
 
 
+# Arduino
+ARDUINO_ID = "VID:PID=1A86:7523"
+
+
 # Application definition
 
 INSTALLED_APPS = [
