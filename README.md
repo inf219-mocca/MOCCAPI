@@ -52,7 +52,15 @@ that everything is up to date, run the following commands:
 - `flake8` to check for style warnings, errors etc.
 - `python manage.py test` to run tests.
 
-# Docker
+# Reading from the Arduino
 
-Build with `docker build -t moccapi .` and run with `docker run -itd -p
-5432:5432 --rm --name moccapi moccapi`
+There is a separate application for reading from the Arduino in the `sensors`
+folder, if you want to read some data from the Arduino you can run it from a
+terminal and get a single reading from the sensors.
+
+``` python
+from sensors.arduino import Arduino
+arduino = Arduino()
+arduino.read()
+# ('2122.39', '26.31')
+```
