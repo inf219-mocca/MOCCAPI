@@ -16,7 +16,7 @@ django = "*"
 djangorestframework = "*"
 drf-yasg = "*"
 pyserial = "*"
-celery = "*"
+celery = {extras = ["redis"],version = "*"}
 
 [pipenv]
 allow_prereleases = true

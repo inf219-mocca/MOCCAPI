@@ -68,11 +68,11 @@ arduino.read()
 # Using Celery
 
 We are using Celery for asynchronously being able to query the Arduino and add
-the results to the database. For this you need to have RabbitMQ installed as it
-is our broker, then to actually run Celery and RabbitMQ you need to run the
-following two commands in two separate terminal windows:
+the results to the database. For this you need to have Redis installed as it is
+our broker, then to actually run Celery and Redis you need to run the following
+two commands in two separate terminal windows:
 
-1. `rabbitmq-server`
+1. `redis-server`
 2. `celery -A moccapi worker -l info`
 
 Running the commands from Python you need to start the Python Console from
@@ -82,14 +82,16 @@ Pycharm via `Tools -> Python Console`, then run the following:
 from sensors.arduino import Arduino
 from sensors.tasks import read
 t = Arduino()
-read.delay(t.arduino)
-# <AsyncResult: 54b0b295-b465-40a6-b467-65928c78ed9b>
+r = read.delay(t.arduino)
+# <AsyncResult: 58b27a8f-1e9d-4bb2-9118-b4896be2ed3f>
+r.get()
+# ['2111.73', '23.27']
 ```
 
 You'll see the results of the query in the `celery` terminal window:
 
 ``` shell
-[2019-02-22 14:52:43,975: INFO/MainProcess] Received task: sensors.tasks.read[54b0b295-b465-40a6-b467-65928c78ed9b]
-[2019-02-22 14:52:45,783: INFO/ForkPoolWorker-8] Task sensors.tasks.read[54b0b295-b465-40a6-b467-65928c78ed9b] succeeded in 1.8028762819999997s: ('2122.39', '24.63')
+[2019-03-01 11:57:15,566: INFO/MainProcess] Received task: sensors.tasks.read[58b27a8f-1e9d-4bb2-9118-b4896be2ed3f]
+[2019-03-01 11:57:17,394: INFO/ForkPoolWorker-8] Task sensors.tasks.read[58b27a8f-1e9d-4bb2-9118-b4896be2ed3f] succeeded in 1.8236205450000043s: ('2111.73', '23.27')
 ```
 
