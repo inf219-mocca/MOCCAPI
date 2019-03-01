@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "d1a1109fee887f416dc5b6cd3a1bd1156e089317c7b24a0fdac80b3f06c3ff06"
+            "sha256": "6883af556df07e2784b8aa4078ca8fce83d165119dcc6deba81bb44dd4dd9770"
         },
         "pipfile-spec": 6,
         "requires": {},
@@ -28,9 +28,6 @@
             "version": "==3.6.0.0"
         },
         "celery": {
-            "extras": [
-                "redis"
-            ],
             "hashes": [
                 "sha256:62cdf98af78278202b8a3ba1b8215c87ab420eae7eebf0b7ba27b16ebc9f148e",
                 "sha256:ce1f8068f8330e9552def4161f34ee667a1e3f5f8874425ee5768d05e821afca"
@@ -73,6 +70,14 @@
             ],
             "index": "pypi",
             "version": "==2.2b1"
+        },
+        "django-celery-results": {
+            "hashes": [
+                "sha256:80292a68c8b705c788ff0bca9cacc5a431a4de39d7ff49e2ca8277b700d3d616",
+                "sha256:89ae9e32076efc65bcba31bc729870da9b230c63af22b673b79170c4a98039b1"
+            ],
+            "index": "pypi",
+            "version": "==1.0.4"
         },
         "djangorestframework": {
             "hashes": [
@@ -170,13 +175,6 @@
                 "sha256:d5f05e487007e29e03409f9398d074e158d920d36eb82eaf66fb1136b0c5374c"
             ],
             "version": "==2018.9"
-        },
-        "redis": {
-            "hashes": [
-                "sha256:724932360d48e5407e8f82e405ab3650a36ed02c7e460d1e6fddf0f038422b54",
-                "sha256:9b19425a38fd074eb5795ff2b0d9a55b46a44f91f5347995f27e3ad257a7d775"
-            ],
-            "version": "==3.2.0"
         },
         "requests": {
             "hashes": [

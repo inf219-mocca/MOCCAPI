@@ -30,7 +30,8 @@ migration has been made, you only need to write `makemigrations` to create all
 the migrations at once. Currently, we have the following applications configured
 in Django:
 
-- `coffee`
+- `coffee` (the core application)
+- `django_celery_results` (used for async storing of results)
 
 # Developing
 
@@ -68,12 +69,12 @@ arduino.read()
 # Using Celery
 
 We are using Celery for asynchronously being able to query the Arduino and add
-the results to the database. For this you need to have Redis installed as it is
-our broker, then to actually run Celery and Redis you need to run the following
-two commands in two separate terminal windows:
+the results to the database. For this you need to have RabbitMQ installed as it
+is our broker, then to actually run Celery and RabbitMQ you need to run the
+following two commands in two separate terminal windows:
 
-1. `redis-server`
-2. `celery -A moccapi worker -l info`
+1. `rabbitmq-server`
+2. `celery -A moccapi worker -l info -B`
 
 Running the commands from Python you need to start the Python Console from
 Pycharm via `Tools -> Python Console`, then run the following:

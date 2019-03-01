@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     "rest_framework",
     "drf_yasg",
     "coffee.apps.CoffeeConfig",
+    "django_celery_results",
 ]
 
 MIDDLEWARE = [
@@ -102,8 +103,8 @@ REST_FRAMEWORK = {
 SWAGGER_SETTINGS = {"USE_SESSION_AUTH": False, "SECURITY_DEFINITIONS": None}
 
 # Celery configuration
-CELERY_BROKER_URL = "redis://localhost:6379/0"
-CELERY_RESULT_BACKEND = "redis://localhost:6379/1"
+CELERY_BROKER_URL = "amqp://guest:guest@localhost//"
+CELERY_RESULT_BACKEND = "django-db"
 CELERY_ACCEPT_CONTENT = ["json"]
 CELERY_TASK_SERIALIZER = "json"
 CELERY_IMPORTS = ("sensors.tasks", "coffee.tasks")
