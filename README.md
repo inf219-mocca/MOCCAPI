@@ -82,11 +82,9 @@ Pycharm via `Tools -> Python Console`, then run the following:
 ``` python
 from sensors.arduino import Arduino
 from sensors.tasks import read
-t = Arduino()
-r = read.delay(t.arduino)
-# <AsyncResult: 58b27a8f-1e9d-4bb2-9118-b4896be2ed3f>
-r.get()
-# ['2111.73', '23.27']
+a = Arduino()
+a.read()
+# ('2122.39', '24.95')
 ```
 
 You'll see the results of the query in the `celery` terminal window:
