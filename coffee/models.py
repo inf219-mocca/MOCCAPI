@@ -39,3 +39,12 @@ class Coffee(models.Model):
 
     def __str__(self):
         return f"{self.measured_at}: {self.amount} at {self.temperature}C"
+
+    def power_status(self, current: float):
+        if current >= 1000:
+            self.is_powered = self.POWER_BREWING
+        elif 10 < current < 1000:
+            self.is_powered = self.POWER_HEATING
+        else:
+            self.is_powered = self.POWER_OFF
+        self.save()
