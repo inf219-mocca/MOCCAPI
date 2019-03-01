@@ -10,7 +10,7 @@ from sensors.arduino import Arduino
 from .models import Coffee
 
 
-@shared_task
+@shared_task()
 def insert_coffee():
     """worst code ever"""
     a = Arduino()
@@ -24,5 +24,5 @@ def insert_coffee():
     )
     coffee.save()
     coffee.power_status(float(current))
-    print(f"Current: {current}\nTemp: {temp}\nAmount: {amount}")
+    print(f"\nCurrent: {current}\nTemp: {temp}\nAmount: {amount}\n")
     return True
