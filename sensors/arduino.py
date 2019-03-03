@@ -5,8 +5,6 @@ from serial import Serial
 
 from moccapi.settings import ARDUINO_ID
 
-# from coffee import models
-
 
 class Arduino:
     def __init__(self, timeout: int = 1000):

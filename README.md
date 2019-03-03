@@ -76,18 +76,8 @@ following two commands in two separate terminal windows:
 1. `rabbitmq-server`
 2. `celery -A moccapi worker -l info -B`
 
-Running the commands from Python you need to start the Python Console from
-Pycharm via `Tools -> Python Console`, then run the following:
-
-``` python
-from sensors.arduino import Arduino
-from sensors.tasks import read
-a = Arduino()
-a.read()
-# ('2122.39', '24.95')
-```
-
-You'll see the results of the query in the `celery` terminal window:
+While you are running the application you'll see the results of the asynchronous
+queries that are run every few seconds in the `celery` terminal window:
 
 ``` shell
 [2019-03-01 11:57:15,566: INFO/MainProcess] Received task: sensors.tasks.read[58b27a8f-1e9d-4bb2-9118-b4896be2ed3f]
