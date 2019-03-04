@@ -11,7 +11,7 @@ from .models import Coffee, power_status
 
 
 @shared_task()
-def insert_coffee():
+def insert_coffee() -> bool:
     """worst code ever"""
     a = Arduino()
     current, temp = a.read()
@@ -24,7 +24,7 @@ def insert_coffee():
         temperature=temp,
         amount=amount,
         started_brewing=started,
-        is_powered=power_status(float(current)),
+        is_powered=power_status(current),
     )
     coffee.save()
     print(

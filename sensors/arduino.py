@@ -30,5 +30,5 @@ class Arduino:
         """
         with Serial(self.arduino) as ser:
             read = ser.readline().decode("utf-8").strip()
-            current, temp = read.split("\t")
+            current, temp = map(float, read.split("\t"))
         return current, temp
