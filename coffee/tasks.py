@@ -7,7 +7,7 @@ from celery import shared_task
 
 from sensors.arduino import Arduino
 
-from .models import Coffee
+from .models import Coffee, power_status
 
 
 @shared_task()
@@ -20,9 +20,14 @@ def insert_coffee():
     started = time - timedelta(hours=time_since)
     amount = random.uniform(0, 1)
     coffee = Coffee(
-        measured_at=time, temperature=temp, amount=amount, started_brewing=started
+        measured_at=time,
+        temperature=temp,
+        amount=amount,
+        started_brewing=started,
+        is_powered=power_status(float(current)),
     )
     coffee.save()
-    coffee.power_status(float(current))
-    print(f"\nCurrent: {current}\nTemp: {temp}\nAmount: {amount}\n")
+    print(
+        f"\nCurrent: {current}\nTemp: {temp}\nAmount: {amount}\nPower: {coffee.is_powered}\n"
+    )
     return True
