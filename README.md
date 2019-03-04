@@ -62,6 +62,11 @@ terminal and get a single reading from the sensors.
 ``` python
 from sensors.arduino import Arduino
 arduino = Arduino()
+```
+
+And then read from the Arduino.
+
+``` python
 arduino.read()
 # ('2122.39', '26.31')
 ```

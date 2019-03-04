@@ -38,4 +38,3 @@ class CoffeeAPITest(APITestCase):
         self.assertEqual(power_status(power), 0)
         power = 2415.00
         self.assertEqual(power_status(power), 2)
-

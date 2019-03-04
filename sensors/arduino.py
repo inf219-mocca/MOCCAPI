@@ -28,7 +28,8 @@ class Arduino:
         current power and temperature.
         :return: (current, temp)
         """
-        with Serial(self.arduino) as ser:
-            read = ser.readline().decode("utf-8").strip()
-            current, temp = map(float, read.split("\t"))
+        ser = Serial(self.arduino)
+        ser.write(b"1")
+        read = ser.readline().decode("utf-8").strip()
+        current, temp = map(float, read.split("\t"))
         return current, temp
