@@ -89,3 +89,27 @@ queries that are run every few seconds in the `celery` terminal window:
 [2019-03-01 11:57:17,394: INFO/ForkPoolWorker-8] Task sensors.tasks.read[58b27a8f-1e9d-4bb2-9118-b4896be2ed3f] succeeded in 1.8236205450000043s: ('2111.73', '23.27')
 ```
 
+# Logging
+The logger logs debug messages to [debug.log](/moccapi/logging/debug.log).
+
+Logging settings are set in [settings.py](/moccapi/settings.py):
+``` python
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'handlers': {
+        'file': {
+            'level': 'DEBUG',
+            'class': 'logging.FileHandler',
+            'filename': 'moccapi/logging/debug.log',
+        },
+    },
+    'loggers': {
+        'django': {
+            'handlers': ['file'],
+            'level': 'DEBUG',
+            'propagate': True,
+        },
+    },
+}
+``` 
