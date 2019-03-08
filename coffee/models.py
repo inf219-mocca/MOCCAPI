@@ -10,7 +10,11 @@ POWER_STATUS = (
 )
 
 
-def power_status(current: float):
+def power_status(current: float) -> int:
+    """
+    Converts the (power) current into one of the choices used in our Coffee
+    model.
+    """
     if current >= 1000:
         return POWER_BREWING
     elif 10 < current < 1000:

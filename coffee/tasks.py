@@ -11,8 +11,11 @@ from .models import Coffee, power_status
 
 
 @shared_task()
-def insert_coffee() -> bool:
-    """worst code ever"""
+def insert_coffee():
+    """
+    Used by Celery to asynchronously query the Arduino, read the latest
+    reading from it and create a new Coffee model and save it.
+    """
     a = Arduino()
     current, temp = a.read()
     time = timezone.now()
@@ -30,4 +33,3 @@ def insert_coffee() -> bool:
     print(
         f"\nCurrent: {current}\nTemp: {temp}\nAmount: {amount}\nPower: {coffee.is_powered}\n"
     )
-    return True
