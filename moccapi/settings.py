@@ -28,6 +28,10 @@ DEBUG = True
 ALLOWED_HOSTS = []
 
 
+# Arduino
+ARDUINO_ID = "VID:PID=1A86:7523"
+
+
 # Application definition
 
 INSTALLED_APPS = [
@@ -36,6 +40,7 @@ INSTALLED_APPS = [
     "rest_framework",
     "drf_yasg",
     "coffee.apps.CoffeeConfig",
+    "django_celery_results",
 ]
 
 MIDDLEWARE = [
@@ -79,7 +84,7 @@ DATABASES = {
 # https://docs.djangoproject.com/en/2.1/topics/i18n/
 
 LANGUAGE_CODE = "en-us"
-TIME_ZONE = "UTC"
+TIME_ZONE = "Europe/Oslo"
 USE_I18N = True
 USE_L10N = True
 USE_TZ = True
@@ -92,7 +97,18 @@ STATIC_URL = "/static/"
 
 # API documentation
 REST_FRAMEWORK = {
+    "DEFAULT_RENDERER_CLASSES": ("rest_framework.renderers.JSONRenderer",),
     "UNAUTHENTICATED_USER": None,
     "DEFAULT_VERSIONING_CLASS": "rest_framework.versioning.NamespaceVersioning",
 }
 SWAGGER_SETTINGS = {"USE_SESSION_AUTH": False, "SECURITY_DEFINITIONS": None}
+
+# Celery configuration
+CELERY_BROKER_URL = "amqp://guest:guest@localhost//"
+CELERY_RESULT_BACKEND = "django-db"
+CELERY_ACCEPT_CONTENT = ["json"]
+CELERY_TASK_SERIALIZER = "json"
+CELERY_TIMEZONE = "Europe/Oslo"
+CELERY_BEAT_SCHEDULE = {
+    "add-to-database": {"task": "coffee.tasks.insert_coffee", "schedule": 10.0}
+}

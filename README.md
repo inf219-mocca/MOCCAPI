@@ -30,7 +30,8 @@ migration has been made, you only need to write `makemigrations` to create all
 the migrations at once. Currently, we have the following applications configured
 in Django:
 
-- `coffee`
+- `coffee` (the core application)
+- `django_celery_results` (used for async storing of results)
 
 # Developing
 
@@ -52,7 +53,39 @@ that everything is up to date, run the following commands:
 - `flake8` to check for style warnings, errors etc.
 - `python manage.py test` to run tests.
 
-# Docker
+# Reading from the Arduino
 
-Build with `docker build -t moccapi .` and run with `docker run -itd -p
-5432:5432 --rm --name moccapi moccapi`
+There is a separate application for reading from the Arduino in the `sensors`
+folder, if you want to read some data from the Arduino you can run it from a
+terminal and get a single reading from the sensors.
+
+``` python
+from sensors.arduino import Arduino
+arduino = Arduino()
+```
+
+And then read from the Arduino.
+
+``` python
+arduino.read()
+# ('2122.39', '26.31')
+```
+
+# Using Celery
+
+We are using Celery for asynchronously being able to query the Arduino and add
+the results to the database. For this you need to have RabbitMQ installed as it
+is our broker, then to actually run Celery and RabbitMQ you need to run the
+following two commands in two separate terminal windows:
+
+1. `rabbitmq-server`
+2. `celery -A moccapi worker -l info -B`
+
+While you are running the application you'll see the results of the asynchronous
+queries that are run every few seconds in the `celery` terminal window:
+
+``` shell
+[2019-03-01 11:57:15,566: INFO/MainProcess] Received task: sensors.tasks.read[58b27a8f-1e9d-4bb2-9118-b4896be2ed3f]
+[2019-03-01 11:57:17,394: INFO/ForkPoolWorker-8] Task sensors.tasks.read[58b27a8f-1e9d-4bb2-9118-b4896be2ed3f] succeeded in 1.8236205450000043s: ('2111.73', '23.27')
+```
+

@@ -15,6 +15,9 @@ flake8-isort = "*"
 django = "*"
 djangorestframework = "*"
 drf-yasg = "*"
+pyserial = "*"
+celery = "*"
+django-celery-results = "*"
 
 [pipenv]
 allow_prereleases = true

@@ -1,15 +1,29 @@
 from django.db import models
 
+POWER_OFF = 0
+POWER_HEATING = 1
+POWER_BREWING = 2
+POWER_STATUS = (
+    (POWER_OFF, "Power off"),
+    (POWER_HEATING, "Heating"),
+    (POWER_BREWING, "Brewing"),
+)
+
+
+def power_status(current: float) -> int:
+    """
+    Converts the (power) current into one of the choices used in our Coffee
+    model.
+    """
+    if current >= 1000:
+        return POWER_BREWING
+    elif 10 < current < 1000:
+        return POWER_HEATING
+    else:
+        return POWER_OFF
+
 
 class Coffee(models.Model):
-    POWER_OFF = 0
-    POWER_HEATING = 1
-    POWER_BREWING = 2
-    POWER_STATUS = (
-        (POWER_OFF, "Power off"),
-        (POWER_HEATING, "Heating"),
-        (POWER_BREWING, "Brewing"),
-    )
     measured_at = models.DateTimeField(
         help_text="Datetime (ISO 8601) when the data was read."
     )
@@ -36,6 +50,7 @@ class Coffee(models.Model):
 
     class Meta:
         get_latest_by = "measured_at"
+        ordering = ("-measured_at",)
 
     def __str__(self):
         return f"{self.measured_at}: {self.amount} at {self.temperature}C"

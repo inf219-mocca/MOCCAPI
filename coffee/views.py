@@ -21,5 +21,5 @@ class CoffeeListView(generics.ListAPIView):
     Returns the 10 latest readings from the sensor.
     """
 
-    queryset = Coffee.objects.all()[:10]
+    queryset = Coffee.objects.all()[:25]
     serializer_class = CoffeeSerializer
