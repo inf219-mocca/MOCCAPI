@@ -18,6 +18,7 @@ drf-yasg = "*"
 pyserial = "*"
 celery = "*"
 django-celery-results = "*"
+django-cors-headers = "*"
 
 [pipenv]
 allow_prereleases = true

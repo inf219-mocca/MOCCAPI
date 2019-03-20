@@ -37,13 +37,15 @@ ARDUINO_ID = "VID:PID=1A86:7523"
 INSTALLED_APPS = [
     "django.contrib.contenttypes",
     "django.contrib.staticfiles",
-    "rest_framework",
-    "drf_yasg",
-    "coffee.apps.CoffeeConfig",
+    "corsheaders",
     "django_celery_results",
+    "drf_yasg",
+    "rest_framework",
+    "coffee.apps.CoffeeConfig",
 ]
 
 MIDDLEWARE = [
+    "corsheaders.middleware.CorsMiddleware",
     "django.middleware.security.SecurityMiddleware",
     "django.middleware.common.CommonMiddleware",
     "django.middleware.csrf.CsrfViewMiddleware",
@@ -112,3 +114,6 @@ CELERY_TIMEZONE = "Europe/Oslo"
 CELERY_BEAT_SCHEDULE = {
     "add-to-database": {"task": "coffee.tasks.insert_coffee", "schedule": 10.0}
 }
+
+# CORS settings for React
+CORS_ORIGIN_ALLOW_ALL = True
