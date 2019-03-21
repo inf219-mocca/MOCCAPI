@@ -81,7 +81,7 @@ LOGGING = {
     'version': 1,
     'disable_existing_loggers': False,
     'handlers': {
-        'file': {
+        'logfile': {
             'level': 'DEBUG',
             'class': 'logging.FileHandler',
             'filename': 'moccapi/logging/debug.log',
@@ -89,7 +89,7 @@ LOGGING = {
     },
     'loggers': {
         'django': {
-            'handlers': ['file'],
+            'handlers': ['logfile'],
             'level': 'DEBUG',
             'propagate': True,
         },
