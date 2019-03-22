@@ -4,7 +4,7 @@ from coffee.models import Coffee, power_status
 
 
 class CoffeeAPITest(APITestCase):
-    fixtures = ["api.json"]
+    fixtures = ["coffee.json"]
 
     def test_get(self):
         resp = self.client.get("/api/v1/coffee/now")
