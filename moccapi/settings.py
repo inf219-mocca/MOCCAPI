@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     "drf_yasg",
     "rest_framework",
     "coffee.apps.CoffeeConfig",
+    "brew.apps.BrewConfig"
 ]
 
 MIDDLEWARE = [

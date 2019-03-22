@@ -1,5 +1,7 @@
 from django.db import models
 
+from brew.models import Brew
+
 POWER_OFF = 0
 POWER_HEATING = 1
 POWER_BREWING = 2
@@ -24,6 +26,7 @@ def power_status(current: float) -> int:
 
 
 class Coffee(models.Model):
+    brew = models.ForeignKey(Brew, on_delete=models.CASCADE)
     measured_at = models.DateTimeField(
         help_text="Datetime (ISO 8601) when the data was read."
     )
@@ -38,14 +41,6 @@ class Coffee(models.Model):
     0. The machine is powered off.
     1. The machine is keeping the coffee hot.
     2. The machine is brewing coffee.""",
-    )
-    started_brewing = models.DateTimeField(
-        help_text="Datetime (ISO 8601) when the current brew was started."
-    )
-    outages = models.DurationField(
-        blank=True,
-        null=True,
-        help_text="Total duration of time when the brewer was without power. Null if no outages was detected.",
     )
 
     class Meta:
