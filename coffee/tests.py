@@ -12,6 +12,7 @@ class CoffeeAPITest(APITestCase):
         self.assertEqual(
             resp.data,
             {
+                "id": 3,
                 "measured_at": "2019-02-08T19:55:04+01:00",
                 "is_powered": 0,
                 "started_brewing": "2019-02-08T19:55:04+01:00",
