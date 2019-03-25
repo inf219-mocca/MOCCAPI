@@ -28,7 +28,7 @@ def power_status(current: float) -> int:
 class Coffee(models.Model):
     brew = models.ForeignKey(Brew, on_delete=models.CASCADE)
     measured_at = models.DateTimeField(
-        help_text="Datetime (ISO 8601) when the data was read."
+        auto_now_add=True, help_text="Datetime (ISO 8601) when the data was read."
     )
     temperature = models.FloatField(help_text="Temperature of the coffee")
     amount = models.FloatField(
