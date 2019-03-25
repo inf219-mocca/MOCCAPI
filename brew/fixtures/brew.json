@@ -1,0 +1,42 @@
+[
+  {
+    "model": "brew.brew",
+    "pk": 1,
+    "fields": {
+      "started_brewing": "2019-03-01T10:34:24.068Z",
+      "outages": null
+    }
+  },
+  {
+    "model": "brew.brew",
+    "pk": 2,
+    "fields": {
+      "started_brewing": "2019-03-02T15:05:31.533Z",
+      "outages": null
+    }
+  },
+  {
+    "model": "brew.brew",
+    "pk": 3,
+    "fields": {
+      "started_brewing": "2019-03-03T11:06:51.529Z",
+      "outages": null
+    }
+  },
+  {
+    "model": "brew.brew",
+    "pk": 4,
+    "fields": {
+      "started_brewing": "2019-03-04T11:27:22.782Z",
+      "outages": null
+    }
+  },
+  {
+    "model": "brew.brew",
+    "pk": 5,
+    "fields": {
+      "started_brewing": "2019-03-05T09:11:04.882Z",
+      "outages": null
+    }
+  }
+]
