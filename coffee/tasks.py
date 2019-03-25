@@ -1,10 +1,8 @@
 import random
-from datetime import timedelta
-
-from django.utils import timezone
 
 from celery import shared_task
 
+from brew.models import get_brew
 from sensors.arduino import Arduino
 
 from .models import Coffee, power_status
@@ -18,18 +16,9 @@ def insert_coffee():
     """
     a = Arduino()
     current, temp = a.read()
-    time = timezone.now()
-    time_since = random.randint(0, 4)
-    started = time - timedelta(hours=time_since)
     amount = random.uniform(0, 1)
-    coffee = Coffee(
-        measured_at=time,
-        temperature=temp,
-        amount=amount,
-        started_brewing=started,
-        is_powered=power_status(current),
-    )
+    brew = get_brew(current)
+    power = power_status(current)
+    coffee = Coffee(brew=brew, temperature=temp, amount=amount, is_powered=power)
+    brew.save()
     coffee.save()
-    print(
-        f"\nCurrent: {current}\nTemp: {temp}\nAmount: {amount}\nPower: {coffee.is_powered}\n"
-    )
