@@ -10,3 +10,6 @@ class Brew(models.Model):
         null=True,
         help_text="Total duration of time when the brewer was without power. Null if no outages was detected.",
     )
+
+    def __str__(self):
+        return f"Brew {self.id}: {self.started_brewing} - {self.outages}"
