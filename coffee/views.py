@@ -18,7 +18,7 @@ class CoffeeLatestView(generics.RetrieveAPIView):
 
 class CoffeeListView(generics.ListAPIView):
     """
-    Returns the 10 latest readings from the sensor.
+    Returns the 25 latest readings from the sensor.
     """
 
     queryset = Coffee.objects.all()[:25]
