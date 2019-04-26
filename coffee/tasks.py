@@ -16,6 +16,10 @@ def insert_coffee():
     """
     a = Arduino()
     current, temp = a.read()
+
+    if temp > 200:
+        return
+
     amount = random.uniform(0, 1)
     brew = get_brew(current)
     power = power_status(current)
