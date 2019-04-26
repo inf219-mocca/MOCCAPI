@@ -1,5 +1,5 @@
-from datetime import timedelta
 from collections import Counter
+from datetime import timedelta
 from typing import Union
 
 from django.db import models
@@ -32,7 +32,9 @@ def get_brew(power: int) -> Union[Brew, None]:
 
     if power > 1000 and most_frequent == POWER_BREWING:
         return Brew()
-    elif power < 1000 and (most_frequent == POWER_HEATING or most_frequent == POWER_OFF):
+    elif power < 1000 and (
+        most_frequent == POWER_HEATING or most_frequent == POWER_OFF
+    ):
         return Brew.objects.latest()
     else:
         return

@@ -10,6 +10,7 @@ class BrewTodayView(generics.ListAPIView):
     """
     Returns a count of how many brews there has been today.
     """
+
     serializer_class = BrewSerializer
 
     def get_queryset(self):
