@@ -33,6 +33,7 @@ schema_view = get_schema_view(
 
 urlpatterns = [
     path("api/v1/coffee/", include("coffee.urls", namespace="coffee-v1")),
+    path("api/v1/brew/", include("brew.urls", namespace="brew-v1")),
     path(
         "api/v1/swagger/",
         schema_view.with_ui("swagger", cache_timeout=0),
