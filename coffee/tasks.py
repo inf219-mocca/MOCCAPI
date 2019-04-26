@@ -22,6 +22,10 @@ def insert_coffee():
 
     amount = random.uniform(0, 1)
     brew = get_brew(current)
+
+    if brew is None:
+        return
+
     power = power_status(current)
     coffee = Coffee(brew=brew, temperature=temp, amount=amount, is_powered=power)
     brew.save()
