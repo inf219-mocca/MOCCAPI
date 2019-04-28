@@ -1,11 +1,26 @@
 import random
+import statistics
 
 from celery import shared_task
 
 from brew.models import get_brew
 from sensors.arduino import Arduino
 
-from .models import Coffee, power_status
+from .models import Coffee, power_status, POWER_BREWING
+
+
+def valid_reading(temp: int, power: int) -> bool:
+    if temp >= 200:
+        return False
+
+    latest_readings = Coffee.objects.all()[:10]
+    average_temp = statistics.mean([x.temperature for x in latest_readings])
+    diff = abs(average_temp - temp)
+
+    if diff >= 20 and power != POWER_BREWING:
+        return False
+
+    return True
 
 
 @shared_task()
@@ -16,8 +31,9 @@ def insert_coffee():
     """
     a = Arduino()
     current, temp = a.read()
+    power = power_status(current)
 
-    if temp > 200:
+    if not valid_reading(temp, power):
         return
 
     amount = random.uniform(0, 1)
@@ -26,7 +42,6 @@ def insert_coffee():
     if brew is None:
         return
 
-    power = power_status(current)
     coffee = Coffee(brew=brew, temperature=temp, amount=amount, is_powered=power)
     brew.save()
     coffee.save()
