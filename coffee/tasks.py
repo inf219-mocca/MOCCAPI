@@ -6,7 +6,7 @@ from celery import shared_task
 from brew.models import get_brew
 from sensors.arduino import Arduino
 
-from .models import Coffee, power_status, POWER_BREWING
+from .models import POWER_BREWING, Coffee, power_status
 
 
 def valid_reading(temp: int, power: int) -> bool:

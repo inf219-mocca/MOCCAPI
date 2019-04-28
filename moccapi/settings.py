@@ -26,7 +26,7 @@ SECRET_KEY = "o+imepqknv)4dkz0w_n)a5#bd=0q4&q0_u1yp*et*y8wwkbklj"
 DEBUG = True
 
 # TODO: Fix before deploying!
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ["*"]
 
 
 # Arduino
