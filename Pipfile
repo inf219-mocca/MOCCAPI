@@ -10,6 +10,7 @@ coverage = "*"
 flake8-django = "*"
 isort = {extras = ["pipfile"],version = "*"}
 flake8-isort = "*"
+ipython = "*"
 
 [packages]
 django = "*"
