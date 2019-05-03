@@ -42,6 +42,8 @@ def insert_coffee():
     if brew is None:
         return
 
-    coffee = Coffee(brew=brew, temperature=temp, amount=amount, is_powered=power)
+    coffee = Coffee(
+        brew=brew, temperature=temp, amount=amount, status=power, power=current
+    )
     brew.save()
     coffee.save()

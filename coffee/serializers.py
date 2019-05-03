@@ -14,7 +14,7 @@ class CoffeeSerializer(serializers.ModelSerializer):
             "measured_at",
             "temperature",
             "amount",
-            "is_powered",
+            "status",
             "brew_started",
             "brew_outages",
         )

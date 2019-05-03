@@ -34,7 +34,7 @@ class Coffee(models.Model):
     amount = models.FloatField(
         help_text="Amount of coffee in the pot, going from 0 (empty) to 1 (full)."
     )
-    is_powered = models.PositiveSmallIntegerField(
+    status = models.PositiveSmallIntegerField(
         choices=POWER_STATUS,
         default=POWER_OFF,
         help_text="""Power status of the coffee machine:
@@ -42,6 +42,7 @@ class Coffee(models.Model):
     1. The machine is keeping the coffee hot.
     2. The machine is brewing coffee.""",
     )
+    current = models.FloatField(help_text="How much power the machine draws")
 
     class Meta:
         get_latest_by = "measured_at"
