@@ -20,18 +20,15 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/2.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = "o+imepqknv)4dkz0w_n)a5#bd=0q4&q0_u1yp*et*y8wwkbklj"
+SECRET_KEY = "we dont use any kind of authentication and signing so we can ignore this"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = os.environ.get("DEBUG", False)
 
-# TODO: Fix before deploying!
-ALLOWED_HOSTS = ["*"]
-
+ALLOWED_HOSTS = ["localhost", "0.0.0.0"]
 
 # Arduino
 ARDUINO_ID = "VID:PID=1A86:7523"
-
 
 # Application definition
 
@@ -72,6 +69,11 @@ TEMPLATES = [
 
 WSGI_APPLICATION = "moccapi.wsgi.application"
 
+# Security settings
+CSRF_COOKIE_SECURE = True
+X_FRAME_OPTIONS = "DENY"
+SECURE_CONTENT_TYPE_NOSNIFF = True
+SECURE_BROWSER_XSS_FILTER = True
 
 # Database
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases

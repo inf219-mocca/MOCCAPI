@@ -35,6 +35,12 @@ in Django:
 
 # Developing
 
+**NOTE:** You need to tell the Django instance that is in debug mode, the easiest
+way to run the server is with the `runserver.sh` file, or by setting the
+environment variable `DEBUG` to `1`. On any unix system you do this by writing
+`export DEBUG=1` in your terminal, or you could configure it from your settings
+inside PyCharm.
+
 Once you've run the initial (or subsequent) `makemigrations`, you can update the
 database tables by running `migrate`. Next up you should probably import some
 fixtures so you have some data to work with, you can do this with `loaddata api`
