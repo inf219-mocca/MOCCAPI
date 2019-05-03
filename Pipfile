@@ -20,6 +20,7 @@ pyserial = "*"
 celery = "*"
 django-celery-results = "*"
 django-cors-headers = "*"
+gunicorn = "*"
 
 [pipenv]
 allow_prereleases = true

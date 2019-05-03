@@ -36,7 +36,7 @@ in Django:
 # Developing
 
 **NOTE:** You need to tell the Django instance that is in debug mode, the easiest
-way to run the server is with the `runserver.sh` file, or by setting the
+way to run the server is with the `devserver.sh` file, or by setting the
 environment variable `DEBUG` to `1`. On any unix system you do this by writing
 `export DEBUG=1` in your terminal, or you could configure it from your settings
 inside PyCharm.
