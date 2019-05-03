@@ -8,7 +8,7 @@
       "temperature": 25.85,
       "amount": 0.9878958115548263,
       "status": 0,
-      "power": 0
+      "current": 0
     }
   },
   {
@@ -20,7 +20,7 @@
       "temperature": 25.73,
       "amount": 0.35393822133790154,
       "status": 0,
-      "power": 0
+      "current": 0
     }
   },
   {
@@ -32,7 +32,7 @@
       "temperature": 25.25,
       "amount": 0.29015519355549024,
       "status": 0,
-      "power": 0
+      "current": 0
     }
   },
   {
@@ -44,7 +44,7 @@
       "temperature": 25.49,
       "amount": 0.419388735706676,
       "status": 0,
-      "power": 0
+      "current": 0
     }
   },
   {
@@ -56,7 +56,7 @@
       "temperature": 25.37,
       "amount": 0.7629234079707684,
       "status": 0,
-      "power": 0
+      "current": 0
     }
   },
   {
@@ -68,7 +68,7 @@
       "temperature": 25.69,
       "amount": 0.5367791154149306,
       "status": 0,
-      "power": 0
+      "current": 0
     }
   },
   {
@@ -80,7 +80,7 @@
       "temperature": 26.09,
       "amount": 0.5825527695869102,
       "status": 0,
-      "power": 0
+      "current": 0
     }
   },
   {
@@ -92,7 +92,7 @@
       "temperature": 25.49,
       "amount": 0.7816461748666986,
       "status": 2,
-      "power": 0
+      "current": 0
     }
   },
   {
@@ -104,7 +104,7 @@
       "temperature": 26.15,
       "amount": 0.00182876316554903,
       "status": 2,
-      "power": 0
+      "current": 0
     }
   },
   {
@@ -116,7 +116,7 @@
       "temperature": 25.67,
       "amount": 0.28230869232825173,
       "status": 2,
-      "power": 0
+      "current": 0
     }
   },
   {
@@ -128,7 +128,7 @@
       "temperature": 26.11,
       "amount": 0.8043482958495277,
       "status": 2,
-      "power": 0
+      "current": 0
     }
   },
   {
@@ -140,7 +140,7 @@
       "temperature": 26.23,
       "amount": 0.770689329355748,
       "status": 2,
-      "power": 0
+      "current": 0
     }
   },
   {
@@ -152,7 +152,7 @@
       "temperature": 24.93,
       "amount": 0.43112261771552407,
       "status": 2,
-      "power": 0
+      "current": 0
     }
   },
   {
@@ -164,7 +164,7 @@
       "temperature": 25.01,
       "amount": 0.6996358678074514,
       "status": 2,
-      "power": 0
+      "current": 0
     }
   },
   {
@@ -176,7 +176,7 @@
       "temperature": 25.99,
       "amount": 0.7787481222248176,
       "status": 2,
-      "power": 0
+      "current": 0
     }
   },
   {
@@ -188,7 +188,7 @@
       "temperature": 25.85,
       "amount": 0.8716179297167722,
       "status": 2,
-      "power": 0
+      "current": 0
     }
   },
   {
@@ -200,7 +200,7 @@
       "temperature": 24.87,
       "amount": 0.17091347945576452,
       "status": 2,
-      "power": 0
+      "current": 0
     }
   },
   {
@@ -212,7 +212,7 @@
       "temperature": 24.87,
       "amount": 0.3141850306491577,
       "status": 2,
-      "power": 0
+      "current": 0
     }
   },
   {
@@ -224,7 +224,7 @@
       "temperature": 24.93,
       "amount": 0.943056246657956,
       "status": 2,
-      "power": 0
+      "current": 0
     }
   },
   {
@@ -236,7 +236,7 @@
       "temperature": 25.01,
       "amount": 0.26291447803323276,
       "status": 2,
-      "power": 0
+      "current": 0
     }
   },
   {
@@ -248,7 +248,7 @@
       "temperature": 25.43,
       "amount": 0.2907575014731807,
       "status": 2,
-      "power": 0
+      "current": 0
     }
   },
   {
@@ -260,7 +260,7 @@
       "temperature": 25.13,
       "amount": 0.015333186003285482,
       "status": 2,
-      "power": 0
+      "current": 0
     }
   },
   {
@@ -272,7 +272,7 @@
       "temperature": 24.93,
       "amount": 0.8277610535502551,
       "status": 2,
-      "power": 0
+      "current": 0
     }
   },
   {
@@ -284,7 +284,7 @@
       "temperature": 53.79,
       "amount": 0.19240241030401417,
       "status": 2,
-      "power": 0
+      "current": 0
     }
   },
   {
@@ -296,7 +296,7 @@
       "temperature": 53.65,
       "amount": 0.7671874284124746,
       "status": 2,
-      "power": 0
+      "current": 0
     }
   },
   {
@@ -308,7 +308,7 @@
       "temperature": 53.55,
       "amount": 0.344097412424045,
       "status": 2,
-      "power": 0
+      "current": 0
     }
   },
   {
@@ -320,7 +320,7 @@
       "temperature": 53.33,
       "amount": 0.46666843792081136,
       "status": 2,
-      "power": 0
+      "current": 0
     }
   },
   {
@@ -332,7 +332,7 @@
       "temperature": 53.47,
       "amount": 0.39056069960881157,
       "status": 2,
-      "power": 0
+      "current": 0
     }
   },
   {
@@ -344,7 +344,7 @@
       "temperature": 53.45,
       "amount": 0.6166238747512124,
       "status": 2,
-      "power": 0
+      "current": 0
     }
   },
   {
@@ -356,7 +356,7 @@
       "temperature": 53.23,
       "amount": 0.3793704612732659,
       "status": 2,
-      "power": 0
+      "current": 0
     }
   },
   {
@@ -368,7 +368,7 @@
       "temperature": 25.29,
       "amount": 0.48879781459602467,
       "status": 2,
-      "power": 0
+      "current": 0
     }
   },
   {
@@ -380,7 +380,7 @@
       "temperature": 25.13,
       "amount": 0.6417277551888172,
       "status": 2,
-      "power": 0
+      "current": 0
     }
   },
   {
@@ -392,7 +392,7 @@
       "temperature": 30.43,
       "amount": 0.6866641283200863,
       "status": 2,
-      "power": 0
+      "current": 0
     }
   },
   {
@@ -404,7 +404,7 @@
       "temperature": 30.15,
       "amount": 0.33560897034634096,
       "status": 2,
-      "power": 0
+      "current": 0
     }
   },
   {
@@ -416,7 +416,7 @@
       "temperature": 30.17,
       "amount": 0.23758859686032296,
       "status": 2,
-      "power": 0
+      "current": 0
     }
   },
   {
@@ -428,7 +428,7 @@
       "temperature": 26.11,
       "amount": 0.8736778242787403,
       "status": 2,
-      "power": 0
+      "current": 0
     }
   },
   {
@@ -440,7 +440,7 @@
       "temperature": 26.15,
       "amount": 0.05360128380631779,
       "status": 2,
-      "power": 0
+      "current": 0
     }
   },
   {
@@ -452,7 +452,7 @@
       "temperature": 26.09,
       "amount": 0.5211493075726265,
       "status": 2,
-      "power": 0
+      "current": 0
     }
   },
   {
@@ -464,7 +464,7 @@
       "temperature": 26.03,
       "amount": 0.06915002586358776,
       "status": 2,
-      "power": 0
+      "current": 0
     }
   },
   {
@@ -476,7 +476,7 @@
       "temperature": 26.03,
       "amount": 0.710288034008606,
       "status": 2,
-      "power": 0
+      "current": 0
     }
   },
   {
@@ -488,7 +488,7 @@
       "temperature": 25.99,
       "amount": 0.6031529760483977,
       "status": 2,
-      "power": 0
+      "current": 0
     }
   },
   {
@@ -500,7 +500,7 @@
       "temperature": 25.97,
       "amount": 0.0027236854902856766,
       "status": 2,
-      "power": 0
+      "current": 0
     }
   },
   {
@@ -512,7 +512,7 @@
       "temperature": 25.93,
       "amount": 0.5754914106722212,
       "status": 2,
-      "power": 0
+      "current": 0
     }
   },
   {
@@ -524,7 +524,7 @@
       "temperature": 25.91,
       "amount": 0.9185817720615799,
       "status": 2,
-      "power": 0
+      "current": 0
     }
   },
   {
@@ -536,7 +536,7 @@
       "temperature": 25.91,
       "amount": 0.11990522261624748,
       "status": 2,
-      "power": 0
+      "current": 0
     }
   },
   {
@@ -548,7 +548,7 @@
       "temperature": 25.93,
       "amount": 0.9918434674246674,
       "status": 2,
-      "power": 0
+      "current": 0
     }
   },
   {
@@ -560,7 +560,7 @@
       "temperature": 25.91,
       "amount": 0.38303094501435453,
       "status": 2,
-      "power": 0
+      "current": 0
     }
   },
   {
@@ -572,7 +572,7 @@
       "temperature": 25.91,
       "amount": 0.5281736435801173,
       "status": 2,
-      "power": 0
+      "current": 0
     }
   },
   {
@@ -584,7 +584,7 @@
       "temperature": 25.91,
       "amount": 0.3948269220670063,
       "status": 2,
-      "power": 0
+      "current": 0
     }
   },
   {
@@ -596,7 +596,7 @@
       "temperature": 25.85,
       "amount": 0.48929071638042776,
       "status": 2,
-      "power": 0
+      "current": 0
     }
   },
   {
@@ -608,7 +608,7 @@
       "temperature": 25.81,
       "amount": 0.07603846198245445,
       "status": 2,
-      "power": 0
+      "current": 0
     }
   },
   {
@@ -620,7 +620,7 @@
       "temperature": 25.85,
       "amount": 0.7246808723830909,
       "status": 2,
-      "power": 0
+      "current": 0
     }
   },
   {
@@ -632,7 +632,7 @@
       "temperature": 25.87,
       "amount": 0.2567046809969047,
       "status": 2,
-      "power": 0
+      "current": 0
     }
   },
   {
@@ -644,7 +644,7 @@
       "temperature": 24.89,
       "amount": 0.20651740188432532,
       "status": 2,
-      "power": 0
+      "current": 0
     }
   },
   {
@@ -656,7 +656,7 @@
       "temperature": 24.39,
       "amount": 0.011299408101832387,
       "status": 2,
-      "power": 0
+      "current": 0
     }
   },
   {
@@ -668,7 +668,7 @@
       "temperature": 1037.55,
       "amount": 0.5273330947982595,
       "status": 2,
-      "power": 0
+      "current": 0
     }
   },
   {
@@ -680,7 +680,7 @@
       "temperature": 1037.55,
       "amount": 0.5364349846370345,
       "status": 2,
-      "power": 0
+      "current": 0
     }
   },
   {
@@ -692,7 +692,7 @@
       "temperature": 1037.55,
       "amount": 0.7230111311324172,
       "status": 2,
-      "power": 0
+      "current": 0
     }
   },
   {
@@ -704,7 +704,7 @@
       "temperature": 24.15,
       "amount": 0.47617867976003514,
       "status": 2,
-      "power": 0
+      "current": 0
     }
   },
   {
@@ -716,7 +716,7 @@
       "temperature": 24.11,
       "amount": 0.2570983140864783,
       "status": 2,
-      "power": 0
+      "current": 0
     }
   },
   {
@@ -728,7 +728,7 @@
       "temperature": 24.15,
       "amount": 0.9866023923407987,
       "status": 2,
-      "power": 0
+      "current": 0
     }
   },
   {
@@ -740,7 +740,7 @@
       "temperature": 24.11,
       "amount": 0.48975532256815235,
       "status": 2,
-      "power": 0
+      "current": 0
     }
   },
   {
@@ -752,7 +752,7 @@
       "temperature": 24.15,
       "amount": 0.6471378600038996,
       "status": 2,
-      "power": 0
+      "current": 0
     }
   },
   {
@@ -764,7 +764,7 @@
       "temperature": 28.57,
       "amount": 0.7509971269691406,
       "status": 2,
-      "power": 0
+      "current": 0
     }
   },
   {
@@ -776,7 +776,7 @@
       "temperature": 30.25,
       "amount": 0.1029864867985032,
       "status": 2,
-      "power": 0
+      "current": 0
     }
   },
   {
@@ -788,7 +788,7 @@
       "temperature": 37.11,
       "amount": 0.4690107352894467,
       "status": 2,
-      "power": 0
+      "current": 0
     }
   },
   {
@@ -800,7 +800,7 @@
       "temperature": 24.77,
       "amount": 0.7608834010731964,
       "status": 2,
-      "power": 0
+      "current": 0
     }
   },
   {
@@ -812,7 +812,7 @@
       "temperature": 26.47,
       "amount": 0.3283800089914478,
       "status": 2,
-      "power": 0
+      "current": 0
     }
   },
   {
@@ -824,7 +824,7 @@
       "temperature": 27.93,
       "amount": 0.7060356341870047,
       "status": 2,
-      "power": 0
+      "current": 0
     }
   },
   {
@@ -836,7 +836,7 @@
       "temperature": 30.33,
       "amount": 0.3980859973048343,
       "status": 2,
-      "power": 0
+      "current": 0
     }
   },
   {
@@ -848,7 +848,7 @@
       "temperature": 26.59,
       "amount": 0.3426199386602402,
       "status": 2,
-      "power": 0
+      "current": 0
     }
   },
   {
@@ -860,7 +860,7 @@
       "temperature": 25.11,
       "amount": 0.17979915195175322,
       "status": 2,
-      "power": 0
+      "current": 0
     }
   },
   {
@@ -872,7 +872,7 @@
       "temperature": 25.23,
       "amount": 0.33212846825820974,
       "status": 2,
-      "power": 0
+      "current": 0
     }
   },
   {
@@ -884,7 +884,7 @@
       "temperature": 24.27,
       "amount": 0.2782137613843326,
       "status": 2,
-      "power": 0
+      "current": 0
     }
   },
   {
@@ -896,7 +896,7 @@
       "temperature": 28.23,
       "amount": 0.8140419312774059,
       "status": 2,
-      "power": 0
+      "current": 0
     }
   }
-],
+]

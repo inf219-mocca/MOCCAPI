@@ -17,9 +17,9 @@ class CoffeeAPITest(APITestCase):
                 "measured_at": "2019-03-04T14:21:36.130000+01:00",
                 "temperature": 28.23,
                 "amount": 0.814_041_931_277_405_9,
-                "is_powered": 2,
+                "status": 2,
                 "brew_started": "2019-03-05T10:11:04.882000+01:00",
-                "brew_outages": None,
+                "brew_outages": "00:00:00",
             },
         )
 
