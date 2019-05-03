@@ -3,6 +3,7 @@ from datetime import timedelta
 from typing import Union
 
 from django.db import models
+from django.utils import timezone
 
 
 class Brew(models.Model):
@@ -26,15 +27,18 @@ class Brew(models.Model):
 def get_brew(power: int) -> Union[Brew, None]:
     from coffee.models import Coffee, POWER_HEATING, POWER_BREWING, POWER_OFF
 
+    latest = Brew.objects.latest()
+    diff = (latest.started_brewing - timezone.now()).total_seconds()
+    if diff <= 250:
+        return latest
+
     brews = Coffee.objects.all()[:10]
     occurrences = Counter([x.is_powered for x in brews])
     most_frequent = occurrences.most_common(1)[0][0]  # lol
 
-    if power > 1000 and most_frequent == POWER_BREWING:
+    if power > 1000:
         return Brew()
-    elif power < 1000 and (
-        most_frequent == POWER_HEATING or most_frequent == POWER_OFF
-    ):
-        return Brew.objects.latest()
+    elif power < 100:
+        return latest
     else:
         return
