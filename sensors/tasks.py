@@ -3,7 +3,7 @@ import statistics
 
 from celery import shared_task
 
-from brew.models import get_brew, update_outage
+from brew.models import get_brew
 from sensors.arduino import Arduino
 
 from .models import POWER_BREWING, Coffee, power_status

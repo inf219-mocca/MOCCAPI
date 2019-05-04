@@ -42,4 +42,3 @@ def get_brew(power: int) -> Union[Brew, None]:
         return latest
     else:
         return
-
