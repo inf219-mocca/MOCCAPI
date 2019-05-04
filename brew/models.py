@@ -22,10 +22,17 @@ class Brew(models.Model):
     def __str__(self):
         return f"ID: {self.id}\nStarted brewing: {self.started_brewing}\nOutages: {self.outages}"
 
+    def update_outage(self):
+        from coffee.models import Coffee
+
+        latest_reading = Coffee.objects.latest().measured_at
+        diff = timezone.now() - latest_reading
+        self.outages += diff
+
 
 def get_brew(power: int) -> Union[Brew, None]:
     latest = Brew.objects.latest()
-    diff = (latest.started_brewing - timezone.now()).total_seconds()
+    diff = (timezone.now() - latest.started_brewing).total_seconds()
     if diff <= 250:
         return latest
 
@@ -35,3 +42,4 @@ def get_brew(power: int) -> Union[Brew, None]:
         return latest
     else:
         return
+
