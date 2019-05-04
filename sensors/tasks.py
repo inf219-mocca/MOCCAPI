@@ -3,7 +3,7 @@ import statistics
 
 from celery import shared_task
 
-from brew.models import get_brew
+from brew.models import get_brew, update_outage
 from sensors.arduino import Arduino
 
 from .models import POWER_BREWING, Coffee, power_status
@@ -24,7 +24,7 @@ def valid_reading(temp: int, power: int) -> bool:
 
 
 @shared_task()
-def insert_coffee():
+def event_loop():
     """
     Used by Celery to asynchronously query the Arduino, read the latest
     reading from it and create a new Coffee model and save it.
@@ -41,6 +41,9 @@ def insert_coffee():
 
     if brew is None:
         return
+
+    if power == 0:
+        brew.update_outage()
 
     coffee = Coffee(
         brew=brew, temperature=temp, amount=amount, status=power, power=current
