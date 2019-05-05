@@ -46,7 +46,7 @@ def event_loop():
         brew.update_outage()
 
     coffee = Coffee(
-        brew=brew, temperature=temp, amount=amount, status=power, power=current
+        brew=brew, temperature=temp, amount=amount, status=power, current=current
     )
     brew.save()
     coffee.save()
