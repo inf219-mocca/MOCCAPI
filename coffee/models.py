@@ -49,4 +49,4 @@ class Coffee(models.Model):
         ordering = ("-measured_at",)
 
     def __str__(self):
-        return f"{self.measured_at}: {self.amount} at {self.temperature}C"
+        return "{}: {} at {}C".format(self.measured_at, self.amount, self.temperature)

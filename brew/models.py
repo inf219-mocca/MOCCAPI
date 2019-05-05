@@ -20,7 +20,9 @@ class Brew(models.Model):
         ordering = ("-started_brewing",)
 
     def __str__(self):
-        return f"ID: {self.id}\nStarted brewing: {self.started_brewing}\nOutages: {self.outages}"
+        return "ID: {}\nStarted brewing: {}\nOutages: {}".format(
+            self.id, self.started_brewing, self.outages
+        )
 
     def update_outage(self):
         from coffee.models import Coffee
