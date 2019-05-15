@@ -32,4 +32,5 @@ class Arduino:
         ser.write(b"1")
         read = ser.readline().decode("utf-8").strip()
         current, temp = map(float, read.split("\t"))
+        logger.debug("Current is: " + str(current) + ", temperature is: " + str(temp))
         return current, temp
