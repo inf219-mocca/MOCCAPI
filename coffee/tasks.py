@@ -41,7 +41,7 @@ def event_loop():
     power = power_status(current)
 
     if not valid_reading(temp, power):
-        return
+        return False
 
     image = take_picture(WIDTH, HEIGHT)
     img_array = convert_image(image, THRESHOLD, MEAN)
@@ -49,7 +49,7 @@ def event_loop():
     brew = get_brew(current)
 
     if brew is None:
-        return
+        return False
 
     if power == 0:
         brew.update_outage()
@@ -59,3 +59,5 @@ def event_loop():
     )
     brew.save()
     coffee.save()
+
+    return True
