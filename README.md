@@ -95,26 +95,6 @@ queries that are run every few seconds in the `celery` terminal window:
 ```
 
 # Logging
-The logger logs debug messages to [debug.log](/moccapi/logging/debug.log).
+The logger logs debug messages to `debug.log`.
 
-Logging settings are set in [settings.py](/moccapi/settings.py):
-``` python
-LOGGING = {
-    'version': 1,
-    'disable_existing_loggers': False,
-    'handlers': {
-        'logfile': {
-            'level': 'DEBUG',
-            'class': 'logging.FileHandler',
-            'filename': 'moccapi/logging/debug.log',
-        },
-    },
-    'loggers': {
-        'django': {
-            'handlers': ['logfile'],
-            'level': 'DEBUG',
-            'propagate': True,
-        },
-    },
-}
-``` 
+Currently logs the readings from the Arduino, when it's creating a new brew and the old one if not. 
