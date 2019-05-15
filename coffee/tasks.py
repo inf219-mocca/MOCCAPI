@@ -1,15 +1,22 @@
-import random
 import statistics
 
 from celery import shared_task
 
 from brew.models import get_brew
 from sensors.arduino import Arduino
+from sensors.camera import convert_image, take_picture
+from sensors.liquid import calculate_liquid
 
 from .models import POWER_BREWING, Coffee, power_status
 
+HEIGHT = 360
+WIDTH = 640
+THRESHOLD = 80
+MEAN = 0.5
+
 
 def valid_reading(temp: int, power: int) -> bool:
+    """Heuristics that check whether or not a reading is valid or not."""
     if temp >= 200:
         return False
 
@@ -36,7 +43,9 @@ def event_loop():
     if not valid_reading(temp, power):
         return
 
-    amount = random.uniform(0, 1)
+    image = take_picture(WIDTH, HEIGHT)
+    img_array = convert_image(image, THRESHOLD, MEAN)
+    amount = calculate_liquid(img_array, HEIGHT)
     brew = get_brew(current)
 
     if brew is None:
