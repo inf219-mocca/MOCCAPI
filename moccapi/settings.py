@@ -80,11 +80,17 @@ SECURE_BROWSER_XSS_FILTER = True
 LOGGING = {
     'version': 1,
     'disable_existing_loggers': False,
+    'formatters': {
+        'logfile': {
+            'format': '%(asctime)s %(name)-12s %(levelname)-8s %(message)s',
+        },
+    },
     'handlers': {
         'logfile': {
             'level': 'DEBUG',
             'class': 'logging.FileHandler',
-            'filename': 'moccapi/logging/debug.log',
+            'filename': 'debug.log',
+            'formatter': 'logfile',
         },
     },
     'loggers': {
