@@ -75,6 +75,27 @@ X_FRAME_OPTIONS = "DENY"
 SECURE_CONTENT_TYPE_NOSNIFF = True
 SECURE_BROWSER_XSS_FILTER = True
 
+
+# Logging
+LOGGING = {
+    "version": 1,
+    "disable_existing_loggers": False,
+    "formatters": {
+        "logfile": {"format": "%(asctime)s %(name)-12s %(levelname)-8s %(message)s"}
+    },
+    "handlers": {
+        "logfile": {
+            "level": "DEBUG",
+            "class": "logging.FileHandler",
+            "filename": "debug.log",
+            "formatter": "logfile",
+        }
+    },
+    "loggers": {
+        "debug": {"handlers": ["logfile"], "level": "DEBUG", "propagate": True}
+    },
+}
+
 # Database
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
 

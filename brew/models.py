@@ -1,8 +1,11 @@
+import logging
 from datetime import timedelta
 from typing import Union
 
 from django.db import models
 from django.utils import timezone
+
+logger = logging.getLogger("debug")
 
 
 class Brew(models.Model):
@@ -39,8 +42,10 @@ def get_brew(power: int) -> Union[Brew, None]:
         return latest
 
     if power > 1000:
+        logger.debug("Creating a new brew")
         return Brew()
     elif power < 100:
+        logger.debug("Returning latest brew: " + str(latest))
         return latest
     else:
         return

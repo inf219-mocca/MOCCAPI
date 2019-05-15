@@ -93,3 +93,8 @@ queries that are run every few seconds in the `celery` terminal window:
 [2019-03-01 11:57:15,566: INFO/MainProcess] Received task: sensors.tasks.read[58b27a8f-1e9d-4bb2-9118-b4896be2ed3f]
 [2019-03-01 11:57:17,394: INFO/ForkPoolWorker-8] Task sensors.tasks.read[58b27a8f-1e9d-4bb2-9118-b4896be2ed3f] succeeded in 1.8236205450000043s: ('2111.73', '23.27')
 ```
+
+# Logging
+The logger logs debug messages to `debug.log`.
+
+Currently logs the readings from the Arduino, when it's creating a new brew and the old one if not. 
