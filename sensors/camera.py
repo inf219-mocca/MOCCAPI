@@ -4,7 +4,6 @@ from time import sleep
 import picamera
 from imageio import imwrite
 from numpy import array
-
 from PIL import Image
 
 
