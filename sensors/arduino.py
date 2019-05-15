@@ -1,9 +1,12 @@
+import logging
 from typing import Union
 
 import serial.tools.list_ports
 from serial import Serial
 
 from moccapi.settings import ARDUINO_ID
+
+logger = logging.getLogger("debug")
 
 
 class Arduino:

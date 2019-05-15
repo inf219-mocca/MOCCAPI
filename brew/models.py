@@ -1,11 +1,12 @@
+import logging
 from datetime import timedelta
 from typing import Union
 
 from django.db import models
 from django.utils import timezone
-import logging
 
-logger = logging.getLogger('debug')
+logger = logging.getLogger("debug")
+
 
 class Brew(models.Model):
     started_brewing = models.DateTimeField(
