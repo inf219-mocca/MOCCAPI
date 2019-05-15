@@ -26,6 +26,10 @@ celery = "*"
 django-celery-results = "*"
 django-cors-headers = "*"
 gunicorn = "*"
+picamera = "*"
+numpy = "*"
+imageio = "*"
+pillow = "*"
 
 [pipenv]
 allow_prereleases = true
