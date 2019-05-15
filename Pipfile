@@ -1,4 +1,9 @@
 [[source]]
+url = "https://www.piwheels.org/simple"
+verify_ssl = true
+name = "piwheels"
+
+[[source]]
 name = "pypi"
 url = "https://pypi.org/simple"
 verify_ssl = true
@@ -10,6 +15,7 @@ coverage = "*"
 flake8-django = "*"
 isort = {extras = ["pipfile"],version = "*"}
 flake8-isort = "*"
+ipython = "*"
 
 [packages]
 django = "*"
@@ -19,6 +25,11 @@ pyserial = "*"
 celery = "*"
 django-celery-results = "*"
 django-cors-headers = "*"
+gunicorn = "*"
+picamera = "*"
+numpy = "*"
+imageio = "*"
+pillow = "*"
 
 [pipenv]
 allow_prereleases = true

@@ -1,0 +1,902 @@
+[
+  {
+    "model": "coffee.coffee",
+    "pk": 1,
+    "fields": {
+      "brew": 1,
+      "measured_at": "2019-03-01T13:34:24.068Z",
+      "temperature": 25.85,
+      "amount": 0.9878958115548263,
+      "status": 0,
+      "current": 0
+    }
+  },
+  {
+    "model": "coffee.coffee",
+    "pk": 2,
+    "fields": {
+      "brew": 1,
+      "measured_at": "2019-03-01T13:37:30.832Z",
+      "temperature": 25.73,
+      "amount": 0.35393822133790154,
+      "status": 0,
+      "current": 0
+    }
+  },
+  {
+    "model": "coffee.coffee",
+    "pk": 3,
+    "fields": {
+      "brew": 1,
+      "measured_at": "2019-03-01T13:41:22.003Z",
+      "temperature": 25.25,
+      "amount": 0.29015519355549024,
+      "status": 0,
+      "current": 0
+    }
+  },
+  {
+    "model": "coffee.coffee",
+    "pk": 4,
+    "fields": {
+      "brew": 1,
+      "measured_at": "2019-03-01T13:42:09.822Z",
+      "temperature": 25.49,
+      "amount": 0.419388735706676,
+      "status": 0,
+      "current": 0
+    }
+  },
+  {
+    "model": "coffee.coffee",
+    "pk": 5,
+    "fields": {
+      "brew": 1,
+      "measured_at": "2019-03-01T13:42:28.623Z",
+      "temperature": 25.37,
+      "amount": 0.7629234079707684,
+      "status": 0,
+      "current": 0
+    }
+  },
+  {
+    "model": "coffee.coffee",
+    "pk": 6,
+    "fields": {
+      "brew": 1,
+      "measured_at": "2019-03-01T13:46:29.762Z",
+      "temperature": 25.69,
+      "amount": 0.5367791154149306,
+      "status": 0,
+      "current": 0
+    }
+  },
+  {
+    "model": "coffee.coffee",
+    "pk": 7,
+    "fields": {
+      "brew": 1,
+      "measured_at": "2019-03-01T13:48:50.652Z",
+      "temperature": 26.09,
+      "amount": 0.5825527695869102,
+      "status": 0,
+      "current": 0
+    }
+  },
+  {
+    "model": "coffee.coffee",
+    "pk": 8,
+    "fields": {
+      "brew": 1,
+      "measured_at": "2019-03-01T13:52:11.356Z",
+      "temperature": 25.49,
+      "amount": 0.7816461748666986,
+      "status": 2,
+      "current": 0
+    }
+  },
+  {
+    "model": "coffee.coffee",
+    "pk": 9,
+    "fields": {
+      "brew": 1,
+      "measured_at": "2019-03-01T14:02:08.565Z",
+      "temperature": 26.15,
+      "amount": 0.00182876316554903,
+      "status": 2,
+      "current": 0
+    }
+  },
+  {
+    "model": "coffee.coffee",
+    "pk": 10,
+    "fields": {
+      "brew": 1,
+      "measured_at": "2019-03-01T14:02:13.772Z",
+      "temperature": 25.67,
+      "amount": 0.28230869232825173,
+      "status": 2,
+      "current": 0
+    }
+  },
+  {
+    "model": "coffee.coffee",
+    "pk": 11,
+    "fields": {
+      "brew": 1,
+      "measured_at": "2019-03-01T14:02:33.104Z",
+      "temperature": 26.11,
+      "amount": 0.8043482958495277,
+      "status": 2,
+      "current": 0
+    }
+  },
+  {
+    "model": "coffee.coffee",
+    "pk": 12,
+    "fields": {
+      "brew": 1,
+      "measured_at": "2019-03-01T14:58:05.630Z",
+      "temperature": 26.23,
+      "amount": 0.770689329355748,
+      "status": 2,
+      "current": 0
+    }
+  },
+  {
+    "model": "coffee.coffee",
+    "pk": 13,
+    "fields": {
+      "brew": 1,
+      "measured_at": "2019-03-01T15:05:23.085Z",
+      "temperature": 24.93,
+      "amount": 0.43112261771552407,
+      "status": 2,
+      "current": 0
+    }
+  },
+  {
+    "model": "coffee.coffee",
+    "pk": 14,
+    "fields": {
+      "brew": 1,
+      "measured_at": "2019-03-01T15:05:31.533Z",
+      "temperature": 25.01,
+      "amount": 0.6996358678074514,
+      "status": 2,
+      "current": 0
+    }
+  },
+  {
+    "model": "coffee.coffee",
+    "pk": 15,
+    "fields": {
+      "brew": 1,
+      "measured_at": "2019-03-01T15:05:41.533Z",
+      "temperature": 25.99,
+      "amount": 0.7787481222248176,
+      "status": 2,
+      "current": 0
+    }
+  },
+  {
+    "model": "coffee.coffee",
+    "pk": 16,
+    "fields": {
+      "brew": 1,
+      "measured_at": "2019-03-01T15:05:51.536Z",
+      "temperature": 25.85,
+      "amount": 0.8716179297167722,
+      "status": 2,
+      "current": 0
+    }
+  },
+  {
+    "model": "coffee.coffee",
+    "pk": 17,
+    "fields": {
+      "brew": 1,
+      "measured_at": "2019-03-01T15:06:01.530Z",
+      "temperature": 24.87,
+      "amount": 0.17091347945576452,
+      "status": 2,
+      "current": 0
+    }
+  },
+  {
+    "model": "coffee.coffee",
+    "pk": 18,
+    "fields": {
+      "brew": 1,
+      "measured_at": "2019-03-01T15:06:11.529Z",
+      "temperature": 24.87,
+      "amount": 0.3141850306491577,
+      "status": 2,
+      "current": 0
+    }
+  },
+  {
+    "model": "coffee.coffee",
+    "pk": 19,
+    "fields": {
+      "brew": 1,
+      "measured_at": "2019-03-01T15:06:21.535Z",
+      "temperature": 24.93,
+      "amount": 0.943056246657956,
+      "status": 2,
+      "current": 0
+    }
+  },
+  {
+    "model": "coffee.coffee",
+    "pk": 20,
+    "fields": {
+      "brew": 1,
+      "measured_at": "2019-03-01T15:06:31.531Z",
+      "temperature": 25.01,
+      "amount": 0.26291447803323276,
+      "status": 2,
+      "current": 0
+    }
+  },
+  {
+    "model": "coffee.coffee",
+    "pk": 21,
+    "fields": {
+      "brew": 1,
+      "measured_at": "2019-03-01T15:06:41.528Z",
+      "temperature": 25.43,
+      "amount": 0.2907575014731807,
+      "status": 2,
+      "current": 0
+    }
+  },
+  {
+    "model": "coffee.coffee",
+    "pk": 22,
+    "fields": {
+      "brew": 2,
+      "measured_at": "2019-03-01T15:06:51.529Z",
+      "temperature": 25.13,
+      "amount": 0.015333186003285482,
+      "status": 2,
+      "current": 0
+    }
+  },
+  {
+    "model": "coffee.coffee",
+    "pk": 23,
+    "fields": {
+      "brew": 2,
+      "measured_at": "2019-03-01T15:07:01.531Z",
+      "temperature": 24.93,
+      "amount": 0.8277610535502551,
+      "status": 2,
+      "current": 0
+    }
+  },
+  {
+    "model": "coffee.coffee",
+    "pk": 24,
+    "fields": {
+      "brew": 2,
+      "measured_at": "2019-03-04T11:27:22.782Z",
+      "temperature": 53.79,
+      "amount": 0.19240241030401417,
+      "status": 2,
+      "current": 0
+    }
+  },
+  {
+    "model": "coffee.coffee",
+    "pk": 25,
+    "fields": {
+      "brew": 2,
+      "measured_at": "2019-03-04T11:27:31.199Z",
+      "temperature": 53.65,
+      "amount": 0.7671874284124746,
+      "status": 2,
+      "current": 0
+    }
+  },
+  {
+    "model": "coffee.coffee",
+    "pk": 26,
+    "fields": {
+      "brew": 2,
+      "measured_at": "2019-03-04T11:27:41.204Z",
+      "temperature": 53.55,
+      "amount": 0.344097412424045,
+      "status": 2,
+      "current": 0
+    }
+  },
+  {
+    "model": "coffee.coffee",
+    "pk": 27,
+    "fields": {
+      "brew": 2,
+      "measured_at": "2019-03-04T11:27:51.215Z",
+      "temperature": 53.33,
+      "amount": 0.46666843792081136,
+      "status": 2,
+      "current": 0
+    }
+  },
+  {
+    "model": "coffee.coffee",
+    "pk": 28,
+    "fields": {
+      "brew": 2,
+      "measured_at": "2019-03-04T11:28:01.202Z",
+      "temperature": 53.47,
+      "amount": 0.39056069960881157,
+      "status": 2,
+      "current": 0
+    }
+  },
+  {
+    "model": "coffee.coffee",
+    "pk": 29,
+    "fields": {
+      "brew": 2,
+      "measured_at": "2019-03-04T11:28:11.198Z",
+      "temperature": 53.45,
+      "amount": 0.6166238747512124,
+      "status": 2,
+      "current": 0
+    }
+  },
+  {
+    "model": "coffee.coffee",
+    "pk": 30,
+    "fields": {
+      "brew": 2,
+      "measured_at": "2019-03-04T11:28:21.195Z",
+      "temperature": 53.23,
+      "amount": 0.3793704612732659,
+      "status": 2,
+      "current": 0
+    }
+  },
+  {
+    "model": "coffee.coffee",
+    "pk": 31,
+    "fields": {
+      "brew": 2,
+      "measured_at": "2019-03-04T11:52:25.669Z",
+      "temperature": 25.29,
+      "amount": 0.48879781459602467,
+      "status": 2,
+      "current": 0
+    }
+  },
+  {
+    "model": "coffee.coffee",
+    "pk": 32,
+    "fields": {
+      "brew": 2,
+      "measured_at": "2019-03-04T11:52:34.490Z",
+      "temperature": 25.13,
+      "amount": 0.6417277551888172,
+      "status": 2,
+      "current": 0
+    }
+  },
+  {
+    "model": "coffee.coffee",
+    "pk": 33,
+    "fields": {
+      "brew": 2,
+      "measured_at": "2019-03-04T11:53:25.865Z",
+      "temperature": 30.43,
+      "amount": 0.6866641283200863,
+      "status": 2,
+      "current": 0
+    }
+  },
+  {
+    "model": "coffee.coffee",
+    "pk": 34,
+    "fields": {
+      "brew": 2,
+      "measured_at": "2019-03-04T11:53:34.302Z",
+      "temperature": 30.15,
+      "amount": 0.33560897034634096,
+      "status": 2,
+      "current": 0
+    }
+  },
+  {
+    "model": "coffee.coffee",
+    "pk": 35,
+    "fields": {
+      "brew": 2,
+      "measured_at": "2019-03-04T11:53:44.304Z",
+      "temperature": 30.17,
+      "amount": 0.23758859686032296,
+      "status": 2,
+      "current": 0
+    }
+  },
+  {
+    "model": "coffee.coffee",
+    "pk": 36,
+    "fields": {
+      "brew": 2,
+      "measured_at": "2019-03-04T12:09:46.538Z",
+      "temperature": 26.11,
+      "amount": 0.8736778242787403,
+      "status": 2,
+      "current": 0
+    }
+  },
+  {
+    "model": "coffee.coffee",
+    "pk": 37,
+    "fields": {
+      "brew": 2,
+      "measured_at": "2019-03-04T12:09:54.896Z",
+      "temperature": 26.15,
+      "amount": 0.05360128380631779,
+      "status": 2,
+      "current": 0
+    }
+  },
+  {
+    "model": "coffee.coffee",
+    "pk": 38,
+    "fields": {
+      "brew": 2,
+      "measured_at": "2019-03-04T12:10:04.896Z",
+      "temperature": 26.09,
+      "amount": 0.5211493075726265,
+      "status": 2,
+      "current": 0
+    }
+  },
+  {
+    "model": "coffee.coffee",
+    "pk": 39,
+    "fields": {
+      "brew": 2,
+      "measured_at": "2019-03-04T12:10:14.889Z",
+      "temperature": 26.03,
+      "amount": 0.06915002586358776,
+      "status": 2,
+      "current": 0
+    }
+  },
+  {
+    "model": "coffee.coffee",
+    "pk": 40,
+    "fields": {
+      "brew": 2,
+      "measured_at": "2019-03-04T12:10:24.887Z",
+      "temperature": 26.03,
+      "amount": 0.710288034008606,
+      "status": 2,
+      "current": 0
+    }
+  },
+  {
+    "model": "coffee.coffee",
+    "pk": 41,
+    "fields": {
+      "brew": 3,
+      "measured_at": "2019-03-04T12:10:34.884Z",
+      "temperature": 25.99,
+      "amount": 0.6031529760483977,
+      "status": 2,
+      "current": 0
+    }
+  },
+  {
+    "model": "coffee.coffee",
+    "pk": 42,
+    "fields": {
+      "brew": 3,
+      "measured_at": "2019-03-04T12:10:44.894Z",
+      "temperature": 25.97,
+      "amount": 0.0027236854902856766,
+      "status": 2,
+      "current": 0
+    }
+  },
+  {
+    "model": "coffee.coffee",
+    "pk": 43,
+    "fields": {
+      "brew": 3,
+      "measured_at": "2019-03-04T12:10:54.881Z",
+      "temperature": 25.93,
+      "amount": 0.5754914106722212,
+      "status": 2,
+      "current": 0
+    }
+  },
+  {
+    "model": "coffee.coffee",
+    "pk": 44,
+    "fields": {
+      "brew": 3,
+      "measured_at": "2019-03-04T12:11:04.882Z",
+      "temperature": 25.91,
+      "amount": 0.9185817720615799,
+      "status": 2,
+      "current": 0
+    }
+  },
+  {
+    "model": "coffee.coffee",
+    "pk": 45,
+    "fields": {
+      "brew": 3,
+      "measured_at": "2019-03-04T12:11:14.880Z",
+      "temperature": 25.91,
+      "amount": 0.11990522261624748,
+      "status": 2,
+      "current": 0
+    }
+  },
+  {
+    "model": "coffee.coffee",
+    "pk": 46,
+    "fields": {
+      "brew": 3,
+      "measured_at": "2019-03-04T12:11:24.884Z",
+      "temperature": 25.93,
+      "amount": 0.9918434674246674,
+      "status": 2,
+      "current": 0
+    }
+  },
+  {
+    "model": "coffee.coffee",
+    "pk": 47,
+    "fields": {
+      "brew": 3,
+      "measured_at": "2019-03-04T12:11:34.884Z",
+      "temperature": 25.91,
+      "amount": 0.38303094501435453,
+      "status": 2,
+      "current": 0
+    }
+  },
+  {
+    "model": "coffee.coffee",
+    "pk": 48,
+    "fields": {
+      "brew": 3,
+      "measured_at": "2019-03-04T12:11:44.881Z",
+      "temperature": 25.91,
+      "amount": 0.5281736435801173,
+      "status": 2,
+      "current": 0
+    }
+  },
+  {
+    "model": "coffee.coffee",
+    "pk": 49,
+    "fields": {
+      "brew": 3,
+      "measured_at": "2019-03-04T12:11:54.888Z",
+      "temperature": 25.91,
+      "amount": 0.3948269220670063,
+      "status": 2,
+      "current": 0
+    }
+  },
+  {
+    "model": "coffee.coffee",
+    "pk": 50,
+    "fields": {
+      "brew": 3,
+      "measured_at": "2019-03-04T12:12:04.886Z",
+      "temperature": 25.85,
+      "amount": 0.48929071638042776,
+      "status": 2,
+      "current": 0
+    }
+  },
+  {
+    "model": "coffee.coffee",
+    "pk": 51,
+    "fields": {
+      "brew": 3,
+      "measured_at": "2019-03-04T12:12:14.956Z",
+      "temperature": 25.81,
+      "amount": 0.07603846198245445,
+      "status": 2,
+      "current": 0
+    }
+  },
+  {
+    "model": "coffee.coffee",
+    "pk": 52,
+    "fields": {
+      "brew": 3,
+      "measured_at": "2019-03-04T12:12:24.893Z",
+      "temperature": 25.85,
+      "amount": 0.7246808723830909,
+      "status": 2,
+      "current": 0
+    }
+  },
+  {
+    "model": "coffee.coffee",
+    "pk": 53,
+    "fields": {
+      "brew": 3,
+      "measured_at": "2019-03-04T12:12:34.889Z",
+      "temperature": 25.87,
+      "amount": 0.2567046809969047,
+      "status": 2,
+      "current": 0
+    }
+  },
+  {
+    "model": "coffee.coffee",
+    "pk": 54,
+    "fields": {
+      "brew": 3,
+      "measured_at": "2019-03-04T12:15:48.754Z",
+      "temperature": 24.89,
+      "amount": 0.20651740188432532,
+      "status": 2,
+      "current": 0
+    }
+  },
+  {
+    "model": "coffee.coffee",
+    "pk": 55,
+    "fields": {
+      "brew": 3,
+      "measured_at": "2019-03-04T12:18:45.035Z",
+      "temperature": 24.39,
+      "amount": 0.011299408101832387,
+      "status": 2,
+      "current": 0
+    }
+  },
+  {
+    "model": "coffee.coffee",
+    "pk": 56,
+    "fields": {
+      "brew": 3,
+      "measured_at": "2019-03-04T13:17:15.464Z",
+      "temperature": 1037.55,
+      "amount": 0.5273330947982595,
+      "status": 2,
+      "current": 0
+    }
+  },
+  {
+    "model": "coffee.coffee",
+    "pk": 57,
+    "fields": {
+      "brew": 3,
+      "measured_at": "2019-03-04T13:17:23.717Z",
+      "temperature": 1037.55,
+      "amount": 0.5364349846370345,
+      "status": 2,
+      "current": 0
+    }
+  },
+  {
+    "model": "coffee.coffee",
+    "pk": 58,
+    "fields": {
+      "brew": 3,
+      "measured_at": "2019-03-04T13:17:33.725Z",
+      "temperature": 1037.55,
+      "amount": 0.7230111311324172,
+      "status": 2,
+      "current": 0
+    }
+  },
+  {
+    "model": "coffee.coffee",
+    "pk": 59,
+    "fields": {
+      "brew": 3,
+      "measured_at": "2019-03-04T13:17:43.717Z",
+      "temperature": 24.15,
+      "amount": 0.47617867976003514,
+      "status": 2,
+      "current": 0
+    }
+  },
+  {
+    "model": "coffee.coffee",
+    "pk": 60,
+    "fields": {
+      "brew": 3,
+      "measured_at": "2019-03-04T13:17:53.716Z",
+      "temperature": 24.11,
+      "amount": 0.2570983140864783,
+      "status": 2,
+      "current": 0
+    }
+  },
+  {
+    "model": "coffee.coffee",
+    "pk": 61,
+    "fields": {
+      "brew": 4,
+      "measured_at": "2019-03-04T13:18:03.719Z",
+      "temperature": 24.15,
+      "amount": 0.9866023923407987,
+      "status": 2,
+      "current": 0
+    }
+  },
+  {
+    "model": "coffee.coffee",
+    "pk": 62,
+    "fields": {
+      "brew": 4,
+      "measured_at": "2019-03-04T13:18:13.711Z",
+      "temperature": 24.11,
+      "amount": 0.48975532256815235,
+      "status": 2,
+      "current": 0
+    }
+  },
+  {
+    "model": "coffee.coffee",
+    "pk": 63,
+    "fields": {
+      "brew": 4,
+      "measured_at": "2019-03-04T13:18:23.714Z",
+      "temperature": 24.15,
+      "amount": 0.6471378600038996,
+      "status": 2,
+      "current": 0
+    }
+  },
+  {
+    "model": "coffee.coffee",
+    "pk": 64,
+    "fields": {
+      "brew": 4,
+      "measured_at": "2019-03-04T13:18:33.712Z",
+      "temperature": 28.57,
+      "amount": 0.7509971269691406,
+      "status": 2,
+      "current": 0
+    }
+  },
+  {
+    "model": "coffee.coffee",
+    "pk": 65,
+    "fields": {
+      "brew": 4,
+      "measured_at": "2019-03-04T13:18:43.711Z",
+      "temperature": 30.25,
+      "amount": 0.1029864867985032,
+      "status": 2,
+      "current": 0
+    }
+  },
+  {
+    "model": "coffee.coffee",
+    "pk": 66,
+    "fields": {
+      "brew": 4,
+      "measured_at": "2019-03-04T13:18:53.723Z",
+      "temperature": 37.11,
+      "amount": 0.4690107352894467,
+      "status": 2,
+      "current": 0
+    }
+  },
+  {
+    "model": "coffee.coffee",
+    "pk": 67,
+    "fields": {
+      "brew": 4,
+      "measured_at": "2019-03-04T13:19:03.711Z",
+      "temperature": 24.77,
+      "amount": 0.7608834010731964,
+      "status": 2,
+      "current": 0
+    }
+  },
+  {
+    "model": "coffee.coffee",
+    "pk": 68,
+    "fields": {
+      "brew": 4,
+      "measured_at": "2019-03-04T13:19:13.711Z",
+      "temperature": 26.47,
+      "amount": 0.3283800089914478,
+      "status": 2,
+      "current": 0
+    }
+  },
+  {
+    "model": "coffee.coffee",
+    "pk": 69,
+    "fields": {
+      "brew": 4,
+      "measured_at": "2019-03-04T13:19:23.712Z",
+      "temperature": 27.93,
+      "amount": 0.7060356341870047,
+      "status": 2,
+      "current": 0
+    }
+  },
+  {
+    "model": "coffee.coffee",
+    "pk": 70,
+    "fields": {
+      "brew": 4,
+      "measured_at": "2019-03-04T13:19:33.713Z",
+      "temperature": 30.33,
+      "amount": 0.3980859973048343,
+      "status": 2,
+      "current": 0
+    }
+  },
+  {
+    "model": "coffee.coffee",
+    "pk": 71,
+    "fields": {
+      "brew": 4,
+      "measured_at": "2019-03-04T13:19:43.718Z",
+      "temperature": 26.59,
+      "amount": 0.3426199386602402,
+      "status": 2,
+      "current": 0
+    }
+  },
+  {
+    "model": "coffee.coffee",
+    "pk": 72,
+    "fields": {
+      "brew": 4,
+      "measured_at": "2019-03-04T13:19:53.714Z",
+      "temperature": 25.11,
+      "amount": 0.17979915195175322,
+      "status": 2,
+      "current": 0
+    }
+  },
+  {
+    "model": "coffee.coffee",
+    "pk": 73,
+    "fields": {
+      "brew": 5,
+      "measured_at": "2019-03-04T13:20:03.712Z",
+      "temperature": 25.23,
+      "amount": 0.33212846825820974,
+      "status": 2,
+      "current": 0
+    }
+  },
+  {
+    "model": "coffee.coffee",
+    "pk": 74,
+    "fields": {
+      "brew": 5,
+      "measured_at": "2019-03-04T13:20:13.714Z",
+      "temperature": 24.27,
+      "amount": 0.2782137613843326,
+      "status": 2,
+      "current": 0
+    }
+  },
+  {
+    "model": "coffee.coffee",
+    "pk": 75,
+    "fields": {
+      "brew": 5,
+      "measured_at": "2019-03-04T13:21:36.130Z",
+      "temperature": 28.23,
+      "amount": 0.8140419312774059,
+      "status": 2,
+      "current": 0
+    }
+  }
+]
